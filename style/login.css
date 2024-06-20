@@ -1,0 +1,92 @@
+
+body{
+  overflow: hidden;
+}
+*{
+  font-family: "Inter", sans-serif;
+}
+#login{
+  display: flex;
+  flex-direction: 1fr 1fr;
+}
+
+.left-side img{
+  height: 100%;
+}
+
+.right-side{
+  width: 100%;
+  background-color: rgb(218, 237, 163 ,93%);
+  height: 100vh;
+  padding: 10px;
+  
+}
+
+h1{
+  color: #229C20;
+  font-size: 54px;
+  font-weight: 300;
+}
+
+.heading{
+  justify-content: end;
+  margin-top:80px;
+}
+.heading p{
+  color: #3A535E;
+  font-size: 20px;
+}
+
+.social-icons a{
+   width: 71px;
+   
+   height:60px ;
+   justify-content: center;
+}
+.social-icons img{
+  width: 40px;
+  height: 39px;
+}
+
+form{
+  display: grid;
+   margin: 40px; 
+   width: 293px;
+}
+
+input{
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border: none;
+  height: 35px;
+}
+
+form p{
+  text-decoration: underline;
+}
+a{
+  color: black;
+}
+
+.social-icons{
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+
+}
+
+.social-icons button{
+  background-color: white;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}

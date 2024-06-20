@@ -1,0 +1,30 @@
+
+body{
+  font-family: "Inter", sans-serif;
+  background-color: rgb(218, 237, 163 ,93%);
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+.middle-side ul{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.middle-side li a{
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+

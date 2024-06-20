@@ -1,0 +1,27 @@
+.hero-section{
+  margin-top: 140px;
+  padding: 20px;
+}
+
+.fle-box{
+  display: flex;
+  flex-direction: 1fr 1fr;
+
+}
+
+.main-message{
+  font-family: "Inknut Antiqua", serif;
+ margin-top: 40px;
+}
+
+.main-message h1{
+  font-weight: 300;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.right-side img{
+   height: 483px;
+   width: 500px;
+
+}
