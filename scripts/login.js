@@ -34,7 +34,7 @@ googleLogin.addEventListener("click", function() {
       console.log(user);
 
       // Redirect to dashboard
-      window.location.href = "../dashboard.html";
+      window.location.href = "dashboard.html";
     })
     .catch((error) => {
       // Handle Errors here.
