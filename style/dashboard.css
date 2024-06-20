@@ -25,3 +25,32 @@
    width: 500px;
 
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    
+   
+  }
+  .flex-box {
+    margin-top: 60PX;
+    flex-direction: column;
+  }
+
+  .right-side {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .middle-side ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header .right-side {
+    margin-top: 10px;
+  }
+}
