@@ -27,11 +27,13 @@ body {
   list-style: none;
   gap: 30px;
 }
-.nav-sidebar{
+
+.nav-sidebar {
   display: flex;
   align-items: center;
   gap: 50px;
 }
+
 .nav-sidebar li a {
   text-decoration: none;
   color: black;
@@ -46,14 +48,16 @@ body {
 .log-out-black img {
   height: 30px;
 }
-.close-nav{
+
+.close-nav {
   display: none;
 }
+
 .menu {
   display: none;
 }
 
-.log-out{
+.log-out {
   display: none;
 }
 
@@ -61,18 +65,19 @@ body {
   .menu {
     display: block;
   }
-  .close-nav{
+
+  .close-nav {
     display: block;
   }
 
-  .log-out-black{
+  .log-out-black {
     display: none;
-
   }
 
-  .log-out{
+  .log-out {
     display: block;
   }
+
   .middle-side {
     justify-content: left;
     position: absolute;
@@ -80,7 +85,6 @@ body {
     left: 0;
     width: 100%;
     height: 0;
- 
     overflow: hidden;
     transition: height 0.3s ease;
     background-color: black;
@@ -93,13 +97,13 @@ body {
   .nav-sidebar ul {
     display: grid;
     gap: 30px;
-    
   }
-  .nav-sidebar{
+
+  .nav-sidebar {
     display: grid;
   }
 
-  .close-nav{
+  .close-nav {
     margin-left: 33px;
   }
 
@@ -109,7 +113,6 @@ body {
 
   .nav-sidebar li a {
     color: white;
-  
     font-size: 20px;
   }
 

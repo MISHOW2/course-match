@@ -1,48 +1,41 @@
-.hero-section{
+.hero-section {
   margin-top: 140px;
   padding: 20px;
 }
 
-.fle-box{
+.fle-box {
   display: flex;
   gap: 40px;
-
 }
 
-.main-message{
+.main-message {
   font-family: "Inknut Antiqua", serif;
- margin-top: 40px;
+  margin-top: 40px;
 }
 
-.main-message h1{
+.main-message h1 {
   font-weight: 300;
-  font-style: normal;
   font-size: 26px;
 }
 
-.flex-right-side img{
-   height: 483px;
-   width: 500px;
-
-}
-
-.flex-left-side{
+.flex-right-side img {
   height: 483px;
   width: 500px;
-
 }
 
-
+.flex-left-side {
+  height: 483px;
+  width: 500px;
+}
 
 @media (max-width: 768px) {
   .hero-section {
-    
-   
+    margin-top: 60px;
   }
   .flex-box {
-    margin-top: 60PX;
+    flex-direction: column;
+    align-items: center;
   }
-
   .flex-right-side {
     display: none;
   }

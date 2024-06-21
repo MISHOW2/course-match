@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/dashboard.css">
-  <title>Document</title>
   
+  <title>CourseMatch Dashboard</title>
+  <script type="module" src="scripts/dashboard.js"></script>
 </head>
 <body>
   <div class="header">
@@ -45,7 +46,6 @@
   <div class="hero-section">
     <div>
       <h1 style="color:#CE0E98;">Welcome, <span id="loggedInUserName"></span> <span id="loggedInUserEmail">!</span></h1>
-
     </div>
     <div class="fle-box">
       <div class="flex-left-side">
@@ -60,7 +60,14 @@
     </div>
   </div>
 
-  <script type="module" src="scripts/dashboard.js">
+  <script>
+    document.getElementById('toggle-menu').addEventListener('click', function() {
+      document.getElementById('sidebar').classList.toggle('open');
+    });
+
+    document.getElementById('close-menu').addEventListener('click', function() {
+      document.getElementById('sidebar').classList.remove('open');
+    });
   </script>
 </body>
 </html>
