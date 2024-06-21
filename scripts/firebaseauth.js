@@ -1,6 +1,7 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Your web app's Firebase configuration
@@ -11,122 +12,116 @@ const firebaseConfig = {
   storageBucket: "course-match-96a3b.appspot.com",
   messagingSenderId: "1097720599878",
   appId: "1:1097720599878:web:c75df7333891b24c534147",
-  measurementId: "G-C4HGH7RW4Q"
+  measurementId: "G-C4HGH7RW4Q",
+  databaseURL: "https://course-match-96a3b-default-rtdb.firebaseio.com"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const auth = getAuth();
+auth.languageCode = 'en';
+const db = getFirestore(app);
+const provider = new GoogleAuthProvider();
 
+// Show message function
 function showMessage(message, divId) {
-  var messageDiv = document.getElementById(divId);
+  const messageDiv = document.getElementById(divId);
   messageDiv.style.display = "block";
   messageDiv.innerHTML = message;
   messageDiv.style.opacity = 1;
-  setTimeout(function () {
+  setTimeout(() => {
     messageDiv.style.opacity = 0;
-  }, 5000);
+  }, 4000);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const signUp = document.getElementById('submitSignUp');
-  const signIn = document.getElementById('submitSignIn');
+// Event listener for Google Sign-In
+const googleLogin = document.querySelector('.js-google-login');
+googleLogin.addEventListener("click", () => {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const user = result.user;
+      console.log(user);
+      window.location.href = "dashboard.html";
+    })
+    .catch((error) => {
+      console.error(`Error during sign-in: ${error.code} - ${error.message}`);
+      alert(`Error during sign-in: ${error.message}`);
+    });
+});
 
-  signUp.addEventListener('click', (event) => {
-    event.preventDefault();
-    console.log('Sign up button clicked');
-    const email = document.getElementById('rEmail').value;
-    const password = document.getElementById('rPassword').value;
-    const firstName = document.getElementById('fName').value;
-    const lastName = document.getElementById('lName').value;
+// Event listener for email/password sign-up
+document.getElementById('submitSignUp').addEventListener('click', (event) => {
+  event.preventDefault();
+  const email = document.getElementById('rEmail').value;
+  const password = document.getElementById('rPassword').value;
+  const firstName = document.getElementById('fName').value;
+  const lastName = document.getElementById('lName').value;
 
-    console.log(`Sign up with: ${email}, ${password}, ${firstName}, ${lastName}`);
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      const userData = {
+        email: email,
+        firstName: firstName,
+        lastName: lastName
+      };
+      return setDoc(doc(db, "users", user.uid), userData);
+    })
+    .then(() => {
+      showMessage('Account Created Successfully', 'signUpMessage');
+      setTimeout(() => {
+        window.location.href = 'login.html';
+      }, 4000); // 4-second delay before redirecting to login page
+    })
+    .catch((error) => {
+      console.error("Error creating user or writing document:", error);
+      const errorMessage = error.message;
+      if (error.code === 'auth/email-already-in-use') {
+        showMessage('Email Address Already Exists !!!', 'signUpMessage');
+      } else {
+        showMessage(`Unable to create user: ${errorMessage}`, 'signUpMessage');
+      }
+    });
+});
 
-    const auth = getAuth();
-    const db = getFirestore();
+// Event listener for email/password sign-in
+document.getElementById('submitSignIn').addEventListener('click', (event) => {
+  event.preventDefault();
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
 
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log('User created successfully');
-        const user = userCredential.user;
-        const userData = {
-          email: email,
-          firstName: firstName,
-          lastName: lastName
-        };
-        showMessage('Account Created Successfully', 'signUpMessage');
-        const docRef = doc(db, "users", user.uid);
-        return setDoc(docRef, userData);
-      })
-      .then(() => {
-        console.log('User data written to Firestore');
-        window.location.href = 'index.html';
-      })
-      .catch((error) => {
-        console.error("Error creating user or writing document:", error);
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(`Error code: ${errorCode}`);
-        console.log(`Error message: ${errorMessage}`);
-        if (errorCode === 'auth/email-already-in-use') {
-          showMessage('Email Address Already Exists !!!', 'signUpMessage');
-        } else {
-          showMessage(`Unable to create user: ${errorMessage}`, 'signUpMessage');
-        }
-      });
-  });
-
-  signIn.addEventListener('click', (event) => {
-    event.preventDefault();
-    console.log('Sign in button clicked');
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    console.log(`Sign in with: ${email}, ${password}`);
-
-    const auth = getAuth();
-
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log('User signed in successfully');
-        showMessage('Login is successful', 'signInMessage');
-        const user = userCredential.user;
-        localStorage.setItem('loggedInUserId', user.uid);
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      localStorage.setItem('loggedInUserId', user.uid);
+      showMessage('Login is successful', 'signInMessage');
+      setTimeout(() => {
         window.location.href = 'dashboard.html';
-      })
-      .catch((error) => {
-        console.error("Error signing in:", error);
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(`Error code: ${errorCode}`);
-        console.log(`Error message: ${errorMessage}`);
-        if (errorCode === 'auth/wrong-password') {
-          showMessage('Incorrect Email or Password', 'signInMessage');
-        } else if (errorCode === 'auth/user-not-found') {
-          showMessage('Account does not exist', 'signInMessage');
-        } else {
-          showMessage(`Unable to login: ${errorMessage}`, 'signInMessage');
-        }
-      });
-  });
+      }, 4000); // 4-second delay before redirecting to dashboard
+    })
+    .catch((error) => {
+      console.error("Error signing in:", error);
+      const errorMessage = error.message;
+      if (error.code === 'auth/wrong-password') {
+        showMessage('Incorrect Email or Password', 'signInMessage');
+      } else if (error.code === 'auth/user-not-found') {
+        showMessage('Account does not exist', 'signInMessage');
+      } else {
+        showMessage(`Unable to login: ${errorMessage}`, 'signInMessage');
+      }
+    });
+});
 
-  const showRegisterButton = document.getElementById("show-register");
-  const showLoginButton = document.getElementById("show-login");
-  const loginForm = document.getElementById("login-form");
-  const registerForm = document.getElementById("register-form");
-  const formInstruction = document.getElementById("form-instruction");
+// Toggle between login and registration forms
+document.getElementById("show-register").addEventListener("click", () => {
+  document.getElementById("login-form").style.display = "none";
+  document.getElementById("register-form").style.display = "block";
+  document.getElementById("form-instruction").textContent = "Please register your details";
+});
 
-  showRegisterButton.addEventListener("click", function () {
-    console.log('Show register form');
-    loginForm.style.display = "none";
-    registerForm.style.display = "block";
-    formInstruction.textContent = "Please register your details";
-  });
-
-  showLoginButton.addEventListener("click", function () {
-    console.log('Show login form');
-    registerForm.style.display = "none";
-    loginForm.style.display = "block";
-    formInstruction.textContent = "Welcome to CourseMatch! Please sign in with:";
-  });
+document.getElementById("show-login").addEventListener("click", () => {
+  document.getElementById("register-form").style.display = "none";
+  document.getElementById("login-form").style.display = "block";
+  document.getElementById("form-instruction").textContent = "Welcome to CourseMatch! Please sign in with:";
 });
