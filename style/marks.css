@@ -1,0 +1,88 @@
+
+/* marks.css */
+body {
+  font-family: 'Inknut Antiqua', serif;
+}
+
+.hero-section-marks {
+  padding: 20px;
+
+}
+
+.instructions {
+  margin-bottom: 20px;
+}
+
+.instructions h1 {
+  font-size: 24px;
+}
+
+.instructions p {
+  font-size: 16px;
+}
+
+.flex-box-marks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input[type="number"] {
+  width: calc(50%- 22px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .instructions h1 {
+    font-size: 20px;
+  }
+
+  .instructions p {
+    font-size: 14px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group{
+    display: grid;
+  }
+
+  .form-group select,
+  .form-group input[type="number"] {
+    font-size: 14px;
+    
+  }
+}

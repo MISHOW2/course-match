@@ -62,7 +62,10 @@ body {
   display: none;
 }
 
-@media (max-width: 468px) {
+@media (max-width: 768px) {
+  .header{
+    position: relative;
+  }
   .menu {
     display: block;
   }
@@ -92,7 +95,7 @@ body {
   }
 
   .middle-side.open {
-    height: 50vh; /* Adjust based on the content */
+    height: 100vh; /* Adjust based on the content */
   }
 
   .nav-sidebar ul {
@@ -109,7 +112,10 @@ body {
   }
 
   .nav-sidebar {
+   
+    height: 100%;
     background-color: black;
+    
   }
 
   .nav-sidebar li a {
