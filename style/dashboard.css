@@ -5,7 +5,7 @@
 
 .fle-box{
   display: flex;
-  flex-direction: 1fr 1fr;
+  gap: 40px;
 
 }
 
@@ -23,6 +23,12 @@
 .flex-right-side img{
    height: 483px;
    width: 500px;
+
+}
+
+.flex-left-side{
+  height: 483px;
+  width: 500px;
 
 }
 

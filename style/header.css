@@ -1,11 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: rgba(218, 237, 163, 0.93);
+  overflow-x: hidden;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: white;
   position: absolute;
@@ -26,7 +27,11 @@ body {
   list-style: none;
   gap: 30px;
 }
-
+.nav-sidebar{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
 .nav-sidebar li a {
   text-decoration: none;
   color: black;
@@ -38,7 +43,17 @@ body {
   height: 30px;
 }
 
+.log-out-black img {
+  height: 30px;
+}
+.close-nav{
+  display: none;
+}
 .menu {
+  display: none;
+}
+
+.log-out{
   display: none;
 }
 
@@ -46,7 +61,18 @@ body {
   .menu {
     display: block;
   }
+  .close-nav{
+    display: block;
+  }
 
+  .log-out-black{
+    display: none;
+
+  }
+
+  .log-out{
+    display: block;
+  }
   .middle-side {
     justify-content: left;
     position: absolute;
@@ -68,6 +94,9 @@ body {
     display: grid;
     gap: 30px;
     
+  }
+  .nav-sidebar{
+    display: grid;
   }
 
   .close-nav{
