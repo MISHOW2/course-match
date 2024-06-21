@@ -78,7 +78,7 @@ if (signUpButton) {
         showMessage('Account Created Successfully', 'signUpMessage');
         setTimeout(() => {
           window.location.href = 'login.html';
-        }); 
+        }, 4000); // 4-second delay before redirecting to login page
       })
       .catch((error) => {
         console.error("Error creating user or writing document:", error);
