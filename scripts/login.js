@@ -46,3 +46,46 @@ googleLogin.addEventListener("click", function() {
       alert(`Error during sign-in: ${errorMessage}`);
     });
 });
+
+signIn.addEventListener('click', (event) => {
+  event.preventDefault();
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const auth = getAuth();
+
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      showMessage('Login is successful', 'signInMessage');
+      const user = userCredential.user;
+      localStorage.setItem('loggedInUserId', user.uid);
+      window.location.href = 'dashboard.html';
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      if (errorCode === 'auth/wrong-password') {
+        showMessage('Incorrect Email or Password', 'signInMessage');
+      } else if (errorCode === 'auth/user-not-found') {
+        showMessage('Account does not exist', 'signInMessage');
+      } else {
+        showMessage('Unable to login', 'signInMessage');
+      }
+    });
+});
+
+const showRegisterButton = document.getElementById("show-register");
+const showLoginButton = document.getElementById("show-login");
+const loginForm = document.getElementById("login-form");
+const registerForm = document.getElementById("register-form");
+const formInstruction = document.getElementById("form-instruction");
+
+showRegisterButton.addEventListener("click", function () {
+  loginForm.style.display = "none";
+  registerForm.style.display = "block";
+  formInstruction.textContent = "Please register your details";
+});
+
+showLoginButton.addEventListener("click", function () {
+  registerForm.style.display = "none";
+  loginForm.style.display = "block";
+  formInstruction.textContent = "Welcome to CourseMatch! Please sign in with:";
+});
