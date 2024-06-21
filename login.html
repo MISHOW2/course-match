@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/login.css">
+  <script type="module" src="scripts/firebaseauth.js"></script>
   <title>Login</title>
 </head>
 <body>
@@ -18,25 +19,47 @@
     <div class="right-side">
       <div class="heading">
         <h1>CourseMatch</h1>
-        <p>Welcome to CourseMatch! Please enter your details</p>
+        <p id="form-instruction">Welcome to CourseMatch! Please sign in with:</p>
       </div>
-      <form action="">
-        <label for="email">Email</label><br>
-        <input type="text" id="email" required><br>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" required><br>
-        <a href="">Forgot Password</a><br>
-        <button type="submit">Login</button>
-        <p>Or log in with</p>
+      
+      <div id="login-form">
         <div class="social-icons">
           <button type="button" class="google-signIn js-google-login">
             <img src="image/icons8-google-48.png" alt="">
           </button>
-          <button type="button">
-            <img src="image/icons8-facebook-48.png" alt="">
-          </button>
         </div>
-      </form>
+        <form>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" required><br>
+          <label for="password">Password</label><br>
+          <input type="password" id="password" required><br>
+          <a href="">Forgot Password</a><br>
+          <button type="submit" id="submitSignIn">Login</button>
+          <p>Don't have an account? <button type="button" id="show-register">Sign up</button></p>
+        </form>
+        <div id="signInMessage" class="message"></div>
+      </div>
+      
+      <div id="register-form">
+        <form>
+          <label for="fName">First Name</label>
+          <input type="text" id="fName" placeholder="First Name" required><br>
+
+          <label for="lName">Last Name</label>
+          <input type="text" id="lName" placeholder="Last Name" required><br>
+
+          <label for="rEmail">Email</label>
+          <input type="email" id="rEmail" placeholder="Email" required><br>
+          
+          <label for="rPassword">Password</label>
+          <input type="password" id="rPassword" placeholder="Password" required><br>
+          
+          <button type="submit" id="submitSignUp">Sign Up</button>
+        </form>
+        <p>Already have an account? <button type="button" id="show-login">Login</button></p>
+        <div id="signUpMessage" class="message"></div>
+      </div>
+
     </div>
   </div>
   <script defer type="module" src="scripts/login.js"></script>
