@@ -6,7 +6,7 @@ body {
 
 .hero-section-marks {
   padding: 20px;
-
+   margin-top: 120px;
 }
 
 .instructions {
@@ -29,12 +29,12 @@ body {
 
 .form-container {
   background: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 100%;
-  max-width: 600px;
+  width: 700px;
+
 }
 
 .form-group {
@@ -59,7 +59,18 @@ body {
   display: block;
 }
 
+.btn-check{
+  height: 50px;
+  width: 70px;
+  border: solid 1px;
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 768px) {
+  .hero-section-marks{
+    margin-top: 0px;
+  }
   .instructions h1 {
     font-size: 20px;
   }
