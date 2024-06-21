@@ -1,12 +1,15 @@
+.hero-section-marks{
+  margin-top: 120px;
+}
 
 /* marks.css */
 body {
-  font-family: 'Inknut Antiqua', serif;
+  font-family: "Inter", sans-serif;
 }
 
 .hero-section-marks {
   padding: 20px;
-   margin-top: 120px;
+
 }
 
 .instructions {
@@ -14,7 +17,7 @@ body {
 }
 
 .instructions h1 {
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .instructions p {
@@ -27,20 +30,22 @@ body {
   justify-content: space-around;
 }
 
+.form-group{
+  display: flex;
+  gap: 30px;
+}
 .form-container {
   background: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 700px;
-
+  width: 100%;
+  max-width: 600px;
 }
 
 .form-group {
   margin-bottom: 20px;
-  display: flex;
-  gap: 30px;
 }
 
 .form-group label {
@@ -51,7 +56,7 @@ body {
 
 .form-group select,
 .form-group input[type="number"] {
-  width: calc(50%- 22px);
+  width: calc(50%);
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -60,21 +65,23 @@ body {
 }
 
 .btn-check{
-  height: 50px;
-  width: 70px;
   border: solid 1px;
+  height: 40px;
   background-color: black;
   color: white;
+  width: 100px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .hero-section-marks{
-    margin-top: 0px;
-  }
   .instructions h1 {
     font-size: 20px;
   }
 
+
+  .hero-section-marks{
+    margin-top: 0;
+  }
   .instructions p {
     font-size: 14px;
   }
@@ -87,13 +94,8 @@ body {
     font-size: 16px;
   }
 
-  .form-group{
-    display: grid;
-  }
-
   .form-group select,
   .form-group input[type="number"] {
     font-size: 14px;
-    
   }
 }
