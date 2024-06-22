@@ -348,6 +348,161 @@
         }
       ]
     }
+    ,{
+      "name": "Tshwane University of Technology",
+      "courses": [
+        {
+          "name": "Diploma in Engineering: Civil",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-engineering-civil"
+        },
+        {
+          "name": "Diploma in Information Technology",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 55,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-it"
+        },
+        {
+          "name": "Bachelor of Education in Senior Phase and Further Education and Training",
+          "subject_requirements": {
+            "english": 55,
+            "mathematics": 50,
+            "life-orientation": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.tut.ac.za/apply/bed-senior-phase"
+        },
+        {
+          "name": "Diploma in Hospitality Management",
+          "subject_requirements": {
+            "business-studies": 55,
+            "english": 50,
+            "accounting": 55
+          },
+          "aps": 22,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-hospitality-management"
+        },
+        {
+          "name": "Bachelor of Technology in Biomedical Technology",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 55
+          },
+          "aps": 24,
+          "apply_link": "https://www.tut.ac.za/apply/btech-biomedical-tech"
+        },
+        {
+          "name": "Diploma in Fashion Design",
+          "subject_requirements": {
+            "visual-arts": 60,
+            "design": 60,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-fashion-design"
+        },
+        {
+          "name": "Diploma in Marketing",
+          "subject_requirements": {
+            "mathematics": 55,
+            "english": 50,
+            "business-studies": 55
+          },
+          "aps": 20,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-marketing"
+        },
+        {
+          "name": "Diploma in Mechanical Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-mechanical-engineering"
+        },
+        {
+          "name": "Bachelor of Science in Environmental Sciences",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 55
+          },
+          "aps": 24,
+          "apply_link": "https://www.tut.ac.za/apply/bsc-environmental-sciences"
+        },
+        {
+          "name": "Bachelor of Education in Foundation Phase Teaching",
+          "subject_requirements": {
+            "english": 55,
+            "mathematics": 50,
+            "life-orientation": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.tut.ac.za/apply/bed-foundation-phase"
+        },
+        {
+          "name": "Diploma in Tourism Management",
+          "subject_requirements": {
+            "geography": 55,
+            "english": 50,
+            "business-studies": 55
+          },
+          "aps": 20,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-tourism-management"
+        },
+        {
+          "name": "Diploma in Chemical Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.tut.ac.za/apply/diploma-chemical-engineering"
+        },
+        {
+          "name": "Bachelor of Commerce in Accounting",
+          "subject_requirements": {
+            "mathematics": 60,
+            "accounting": 55,
+            "english": 50
+          },
+          "aps": 25,
+          "apply_link": "https://www.tut.ac.za/apply/bcom-accounting"
+        },
+        {
+          "name": "Bachelor of Laws (LLB)",
+          "subject_requirements": {
+            "english": 60,
+            "history": 55,
+            "business-studies": 55
+          },
+          "aps": 26,
+          "apply_link": "https://www.tut.ac.za/apply/llb-law"
+        },
+        {
+          "name": "Bachelor of Science in Agriculture",
+          "subject_requirements": {
+            "agricultural-sciences": 55,
+            "mathematics": 55,
+            "physical-sciences": 55
+          },
+          "aps": 24,
+          "apply_link": "https://www.tut.ac.za/apply/bsc-agriculture"
+        }
+      ]
+    }
     ,
     {
       "name": "University of the Witwatersrand",

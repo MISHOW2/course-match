@@ -9,7 +9,6 @@ import { toggleMenu } from "./toggle-menu.js";
 
 toggleMenu();
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyBRFlz8x6m9KBBdlaW1lQxYAVqzOSEWmBE",
   authDomain: "course-match-96a3b.firebaseapp.com",
@@ -21,46 +20,48 @@ const firebaseConfig = {
   databaseURL: "https://course-match-96a3b-default-rtdb.firebaseio.com"
 };
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const auth=getAuth();
-const db=getFirestore();
+const auth = getAuth();
+const db = getFirestore();
 
-onAuthStateChanged(auth, (user)=>{
-  const loggedInUserId=localStorage.getItem('loggedInUserId');
-  if(loggedInUserId){
-      console.log(user);
-      const docRef = doc(db, "users", loggedInUserId);
-      getDoc(docRef)
-      .then((docSnap)=>{
-          if(docSnap.exists()){
-              const userData=docSnap.data();
-              document.getElementById('loggedInUserName').innerText=userData.firstName;
-              document.getElementById('loggedUserEmail').innerText=userData.email;
-              document.getElementById('loggedUserLName').innerText=userData.lastName;
-    console.log(userData);
-          }
-          else{
-              console.log("no document found matching id")
-          }
+onAuthStateChanged(auth, (user) => {
+  const loggedInUserId = localStorage.getItem('loggedInUserId');
+  if (loggedInUserId) {
+    console.log(user);
+    const docRef = doc(db, "users", loggedInUserId);
+    getDoc(docRef)
+      .then((docSnap) => {
+        if (docSnap.exists()) {
+          const userData = docSnap.data();
+          document.getElementById('loggedInUserName').innerText = userData.firstName;
+          document.getElementById('loggedUserEmail').innerText = userData.email;
+          document.getElementById('loggedUserLName').innerText = userData.lastName;
+          console.log(userData);
+        } else {
+          console.log("No document found matching ID");
+        }
       })
-      .catch((error)=>{
-          console.log("Error getting document");
-      })
+      .catch((error) => {
+        console.log("Error getting document:", error);
+      });
+  } else {
+    if (user) {
+      // User is logged in but not found in local storage
+      document.getElementById('loggedInUserName').innerText = "Welcome to Course Match";
+      document.getElementById('loggedUserEmail').innerText = "";
+      document.getElementById('loggedUserLName').innerText = "";
+    } else {
+      console.log("User ID not found in local storage and no user is logged in");
+    }
   }
-  else{
-      console.log("User Id not Found in Local storage")
-  }
-})
+});
 
-
-
-export function logout(){
+export function logout() {
   document.addEventListener('DOMContentLoaded', (event) => {
     const logoutButton = document.getElementById('logout');
-  
+
     if (logoutButton) {
       logoutButton.addEventListener('click', () => {
         localStorage.removeItem('loggedInUserId');
@@ -76,27 +77,11 @@ export function logout(){
       console.error('Logout button not found!');
     }
   });
-  
 }
 
 logout();
-  
-// Optional: Add console logs for debugging
+
+
 console.log("Script loaded"); // Check if script is loaded
-console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId')); 
+console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
 
-document.getElementById('toggle-menu').addEventListener('click', function() {
-  document.getElementById('sidebar').classList.toggle('open');
-});
-
-document.getElementById('close-menu').addEventListener('click', function() {
-  document.getElementById('sidebar').classList.remove('open');
-});
-
-document.getElementById('toggle-menu').addEventListener('click', function() {
-  document.getElementById('sidebar').classList.toggle('open');
-});
-
-document.getElementById('close-menu').addEventListener('click', function() {
-  document.getElementById('sidebar').classList.remove('open');
-});
