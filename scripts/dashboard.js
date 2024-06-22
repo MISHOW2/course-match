@@ -82,8 +82,3 @@ logout();
 // Optional: Add console logs for debugging
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 5a344009924672bf6fab486189f2f46641ad02d8
