@@ -55,19 +55,28 @@ onAuthStateChanged(auth, (user)=>{
   }
 })
 
-const logoutButton=document.getElementById('logout');
+
 
 export function logout(){
-  logoutButton.addEventListener('click',()=>{
-  localStorage.removeItem('loggedInUserId');
-  signOut(auth)
-  .then(()=>{
-      window.location.href='login.html';
-  })
-  .catch((error)=>{
-      console.error('Error Signing out:', error);
-  })
-})
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const logoutButton = document.getElementById('logout');
+  
+    if (logoutButton) {
+      logoutButton.addEventListener('click', () => {
+        localStorage.removeItem('loggedInUserId');
+        signOut(auth)
+          .then(() => {
+            window.location.href = 'login.html';
+          })
+          .catch((error) => {
+            console.error('Error Signing out:', error);
+          });
+      });
+    } else {
+      console.error('Logout button not found!');
+    }
+  });
+  
 }
 
 logout();
