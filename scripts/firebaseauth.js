@@ -45,7 +45,7 @@ if (googleLogin) {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        window.location.href = "dashboard.html";
+        window.location.href = "html/dashboard.html";
       })
       .catch((error) => {
         console.error(`Error during sign-in: ${error.code} - ${error.message}`);
@@ -106,7 +106,7 @@ if (signInButton) {
         localStorage.setItem('loggedInUserId', user.uid);
         showMessage('Login is successful', 'signInMessage');
         setTimeout(() => {
-          window.location.href = 'dashboard.html';
+          window.location.href = 'html/dashboard.html';
         }, 4000); // 4-second delay before redirecting to dashboard
       })
       .catch((error) => {
