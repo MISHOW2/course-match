@@ -1,7 +1,6 @@
 import { logout } from "./dashboard.js";
 import { toggleMenu } from "./toggle-menu.js";
 
-
 toggleMenu();
 
 document.getElementById('marks-form').addEventListener('submit', function(event) {
