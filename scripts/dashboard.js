@@ -65,7 +65,7 @@ export function logout() {
         localStorage.removeItem('loggedInUserId');
         signOut(auth)
           .then(() => {
-            window.location.href = 'login.html';
+            window.location.href = '';
           })
           .catch((error) => {
             console.error('Error Signing out:', error);
@@ -83,3 +83,7 @@ logout();
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 5a344009924672bf6fab486189f2f46641ad02d8

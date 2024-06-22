@@ -80,6 +80,7 @@ body {
 
   .log-out {
     display: block;
+    margin-bottom: 40px;
   }
 
   .middle-side {
@@ -100,11 +101,12 @@ body {
 
   .nav-sidebar ul {
     display: grid;
-    gap: 30px;
+ 
   }
 
   .nav-sidebar {
     display: grid;
+
   }
 
   .close-nav {
@@ -115,7 +117,7 @@ body {
    
     height: 100%;
     background-color: black;
-    
+   
   }
 
   .nav-sidebar li a {
@@ -125,11 +127,13 @@ body {
 
   .log-out {
     text-align: center;
-    padding: 10px;
+ 
+    margin-bottom: 90px ;
   }
 
   .log-out img {
     height: 40px;
+    margin-bottom: 50px;
   }
 
   .header {

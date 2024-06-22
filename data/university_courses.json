@@ -1214,14 +1214,12 @@
         {
           "name": "Bachelor of Medicine and Bachelor of Surgery",
           "subject_requirements": {
-            "life-sciences": 75,
+            "life-sciences": 70,
             "physical-sciences": 70,
-            "mathematics": 65,
-            "english": 65,
-            "geography": 60,
-            "history": 55
+            "mathematics": 60,
+            "english": 60
           },
-          "aps": 40,
+          "aps": 35,
           "apply_link": "http://ul.ac.za/apply/mbchb"
         },
         {
@@ -1249,9 +1247,154 @@
           },
           "aps": 32,
           "apply_link": "http://ul.ac.za/apply/ba-sociology"
+        },
+        {
+          "name": "Bachelor of Pharmacy",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 50,
+            "english": 50
+          },
+          "aps": 30,
+          "apply_link": "http://ul.ac.za/apply/bpharm"
+        },
+        {
+          "name": "Bachelor of Nursing",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 50,
+            "english": 50
+          },
+          "aps": 25,
+          "apply_link": "http://ul.ac.za/apply/bsn"
+        },
+        {
+          "name": "Bachelor of Optometry",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 50,
+            "english": 50
+          },
+          "aps": 30,
+          "apply_link": "http://ul.ac.za/apply/boptom"
+        },
+        {
+          "name": "Bachelor of Medical Science",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 50,
+            "english": 50
+          },
+          "aps": 25,
+          "apply_link": "http://ul.ac.za/apply/bmedsci"
+        },
+        {
+          "name": "Bachelor of Arts in Psychology",
+          "subject_requirements": {
+            "english": 60,
+            "history": 55,
+            "geography": 50
+          },
+          "aps": 30,
+          "apply_link": "http://ul.ac.za/apply/ba-psychology"
+        },
+        {
+          "name": "Bachelor of Arts in Social Work",
+          "subject_requirements": {
+            "english": 60,
+            "history": 55,
+            "geography": 50
+          },
+          "aps": 30,
+          "apply_link": "http://ul.ac.za/apply/ba-socialwork"
+        },
+        {
+          "name": "Bachelor of Arts in Criminology and Psychology",
+          "subject_requirements": {
+            "english": 60,
+            "history": 55,
+            "geography": 50
+          },
+          "aps": 30,
+          "apply_link": "http://ul.ac.za/apply/ba-criminology-psychology"
+        },
+        {
+          "name": "Bachelor of Commerce in Accounting",
+          "subject_requirements": {
+            "accounting": 70,
+            "mathematics": 65,
+            "english": 60
+          },
+          "aps": 35,
+          "apply_link": "http://ul.ac.za/apply/bcom-accounting"
+        },
+        {
+          "name": "Bachelor of Commerce in Business Management",
+          "subject_requirements": {
+            "business-studies": 70,
+            "mathematics": 65,
+            "english": 60
+          },
+          "aps": 35,
+          "apply_link": "http://ul.ac.za/apply/bcom-businessmanagement"
+        },
+        {
+          "name": "Bachelor of Commerce in Human Resources",
+          "subject_requirements": {
+            "business-studies": 70,
+            "mathematics": 65,
+            "english": 60
+          },
+          "aps": 35,
+          "apply_link": "http://ul.ac.za/apply/bcom-hr"
+        },
+        {
+          "name": "Bachelor of Law",
+          "subject_requirements": {
+            "english": 70,
+            "history": 65
+          },
+          "aps": 32,
+          "apply_link": "http://ul.ac.za/apply/llb"
+        },
+        {
+          "name": "BSc in Life Science",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 50,
+            "english": 50
+          },
+          "aps": 30,
+          "apply_link": "http://ul.ac.za/apply/bsc-lifescience"
+        },
+        {
+          "name": "BSc in Mathematical Sciences",
+          "subject_requirements": {
+            "mathematics": 70,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 32,
+          "apply_link": "http://ul.ac.za/apply/bsc-mathscience"
+        },
+        {
+          "name": "BSc in Agricultural Economics",
+          "subject_requirements": {
+            "agricultural-sciences": 60,
+            "mathematics": 50,
+            "english": 50
+          },
+          "aps": 25,
+          "apply_link": "http://ul.ac.za/apply/bsc-agri-econ"
         }
       ]
-    },{
+    }
+    ,{
       "name": "University of the Free State",
       "courses": [
         {

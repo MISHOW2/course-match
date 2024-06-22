@@ -64,7 +64,7 @@ body {
   display: block;
 }
 
-.btn-check{
+button{
   border: solid 1px;
   height: 40px;
   background-color: black;
