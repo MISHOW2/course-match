@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/header.css">
-  <link rel="stylesheet" href="style/marks.css">
-  
+  <link rel="stylesheet" href="../style/dashboard.css">
+  <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/marks.css">
   <title>CourseMatch Dashboard</title>
 </head>
 <body>
@@ -15,24 +17,26 @@
     <div class="right-side">
       <h1>CourseMatch</h1>
     </div>
+
     <div class="menu" id="toggle-menu">
-      <img src="image/icons8-menu-50.png" alt="Menu">
+      <img src="../image/icons8-menu-50.png" alt="Menu">
     </div>
+    
     <div class="middle-side" id="sidebar">
       <div class="nav-sidebar">
         <div class="close-nav" id="close-menu">
-          <img src="image/icons8-close-50.png" alt="Close">
+          <img src="../image/icons8-close-50.png" alt="Close">
         </div>
         <ul>
           <li><a href="dashboard.html">HOME</a></li>
-          <li><a href="#">ENTER MARKS</a></li>
+          <li><a href="marks.html">ENTER MARKS</a></li>
           <li><a href="#">HELP/SUPPORT</a></li>
         </ul>
         <div class="log-out-black">
-          <a href="login.html" id="logout"><img src="image/icons8-logout-50-black.png" alt="Log Out"></a>
+          <a href="login.html" id="logout"><img src="../image/icons8-logout-50-black.png" alt="Log Out"></a>
         </div>
         <div class="log-out">
-          <a href="login.html" id="logout"><img src="image/icons8-logout-50.png" alt="Log Out"></a>
+          <a href="login.html" id="logout"><img src="../image/icons8-logout-50.png" alt="Log Out"></a>
         </div>
       </div>
     </div>
@@ -299,6 +303,6 @@
   </div>
 
 
-  <script type="module" src="scripts/marks.js"></script>
+  <script type="module" src="../scripts/marks.js"></script>
 </body>
 </html>

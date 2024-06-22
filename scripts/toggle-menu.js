@@ -1,4 +1,4 @@
-  export function toggleMenu(){
+ export function toggleMenu(){
     document.getElementById('toggle-menu').addEventListener('click', function() {
       document.getElementById('sidebar').classList.toggle('open');
     });

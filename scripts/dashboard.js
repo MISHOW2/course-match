@@ -65,7 +65,7 @@ export function logout() {
         localStorage.removeItem('loggedInUserId');
         signOut(auth)
           .then(() => {
-            window.location.href = 'login.html';
+            window.location.href = '../login.html';
           })
           .catch((error) => {
             console.error('Error Signing out:', error);
