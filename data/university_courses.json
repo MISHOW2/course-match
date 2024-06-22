@@ -1251,7 +1251,155 @@
           "apply_link": "http://ul.ac.za/apply/ba-sociology"
         }
       ]
-    },
+    },{
+      "name": "University of the Free State",
+      "courses": [
+        {
+          "name": "Bachelor of Commerce (BCom) - General",
+          "subject_requirements": {
+            "mathematics": 50,
+            "english": 50,
+            "business-studies": 50,
+            "accounting": 50
+          },
+          "aps": 30,
+          "apply_link": "https://apply.ufs.ac.za/bcom-general"
+        },
+        {
+          "name": "BCom Accounting",
+          "subject_requirements": {
+            "mathematics": 60,
+            "english": 60,
+            "accounting": 60,
+            "economics": 55
+          },
+          "aps": 32,
+          "apply_link": "https://apply.ufs.ac.za/bcom-accounting"
+        },
+        {
+          "name": "BCom Economics",
+          "subject_requirements": {
+            "mathematics": 60,
+            "english": 60,
+            "economics": 60,
+            "geography": 55
+          },
+          "aps": 32,
+          "apply_link": "https://apply.ufs.ac.za/bcom-economics"
+        },
+        {
+          "name": "BCom Investment Management and Banking",
+          "subject_requirements": {
+            "mathematics": 60,
+            "english": 60,
+            "economics": 60,
+            "business-studies": 55
+          },
+          "aps": 32,
+          "apply_link": "https://apply.ufs.ac.za/bcom-investment-banking"
+        },
+        {
+          "name": "Bachelor of Education (BEd) in Foundation Phase Teaching",
+          "subject_requirements": {
+            "english": 50,
+            "mathematics": 50,
+            "life-sciences": 50,
+            "geography": 50
+          },
+          "aps": 28,
+          "apply_link": "https://apply.ufs.ac.za/bed-foundation-phase"
+        },
+        {
+          "name": "BEd in Intermediate Phase Teaching",
+          "subject_requirements": {
+            "english": 50,
+            "mathematics": 50,
+            "life-sciences": 50,
+            "geography": 50
+          },
+          "aps": 28,
+          "apply_link": "https://apply.ufs.ac.za/bed-intermediate-phase"
+        },
+        {
+          "name": "Bachelor of Medicine and Bachelor of Surgery (MBChB)",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "life-sciences": 60,
+            "english": 60
+          },
+          "aps": 36,
+          "apply_link": "https://apply.ufs.ac.za/mbchb"
+        },
+        {
+          "name": "Bachelor of Occupational Therapy",
+          "subject_requirements": {
+            "mathematics": 50,
+            "physical-sciences": 50,
+            "life-sciences": 50,
+            "english": 50
+          },
+          "aps": 32,
+          "apply_link": "https://apply.ufs.ac.za/occupational-therapy"
+        },
+        {
+          "name": "Bachelor of Physiotherapy",
+          "subject_requirements": {
+            "mathematics": 50,
+            "physical-sciences": 50,
+            "life-sciences": 50,
+            "english": 50
+          },
+          "aps": 32,
+          "apply_link": "https://apply.ufs.ac.za/physiotherapy"
+        },
+        {
+          "name": "Bachelor of Optometry",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "life-sciences": 60,
+            "english": 60
+          },
+          "aps": 34,
+          "apply_link": "https://apply.ufs.ac.za/optometry"
+        },
+        {
+          "name": "Bachelor of Medical Science (Radiation Science)",
+          "subject_requirements": {
+            "mathematics": 50,
+            "physical-sciences": 50,
+            "life-sciences": 50,
+            "english": 50
+          },
+          "aps": 32,
+          "apply_link": "https://apply.ufs.ac.za/medical-science"
+        },
+        {
+          "name": "Bachelor of Arts (BA) - General",
+          "subject_requirements": {
+            "english": 50,
+            "history": 50,
+            "geography": 50,
+            "life-sciences": 50
+          },
+          "aps": 28,
+          "apply_link": "https://apply.ufs.ac.za/ba-general"
+        },
+        {
+          "name": "BA in Communication",
+          "subject_requirements": {
+            "english": 60,
+            "history": 50,
+            "geography": 50,
+            "life-sciences": 50
+          },
+          "aps": 30,
+          "apply_link": "https://apply.ufs.ac.za/ba-communication"
+        }
+      ]
+    }
+    ,
     {
       "name": "Mangosuthu University of Technology",
       "courses": [
