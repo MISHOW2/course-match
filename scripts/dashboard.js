@@ -6,7 +6,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 import { toggleMenu } from "./toggle-menu.js";
-
+ 
 toggleMenu();
 
 const firebaseConfig = {
@@ -83,4 +83,7 @@ logout();
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a344009924672bf6fab486189f2f46641ad02d8
