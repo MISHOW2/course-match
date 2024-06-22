@@ -5,7 +5,7 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-import { toggleMenu } from "./toogle-menu.js";
+import { toggleMenu } from "./toggle-menu.js";
 
 toggleMenu();
 

@@ -1,12 +1,13 @@
 import { logout } from "./dashboard.js";
-import { toggleMenu } from "./toogle-menu.js";
+import { toggleMenu } from "./toggle-menu.js";
+import { displayResults } from "./display-results.js";
 
 toggleMenu();
-
 
 document.getElementById('marks-form').addEventListener('submit', function(event) {
   event.preventDefault();
   console.log('hello');
+  
   // Get form data
   const subject1 = document.getElementById('subject1').value;
   const mark1 = parseInt(document.getElementById('mark1').value, 10);
@@ -39,6 +40,23 @@ document.getElementById('marks-form').addEventListener('submit', function(event)
     [subject7]: mark7,
   };
 
+  // Calculate APS
+  const calculateAPS = (marks) => {
+    let aps = 0;
+    Object.values(marks).forEach(mark => {
+      if (mark >= 80) aps += 7;
+      else if (mark >= 70) aps += 6;
+      else if (mark >= 60) aps += 5;
+      else if (mark >= 50) aps += 4;
+      else if (mark >= 40) aps += 3;
+      else if (mark >= 30) aps += 2;
+      else aps += 1;
+    });
+    return aps;
+  };
+
+  const studentAPS = calculateAPS(studentMarks);
+
   fetch('./data/university_courses.json')
     .then(response => response.json())
     .then(data => {
@@ -49,6 +67,7 @@ document.getElementById('marks-form').addEventListener('submit', function(event)
           const requirements = course.subject_requirements;
           let qualifies = true;
 
+          // Check subject requirements
           for (const [subject, minMark] of Object.entries(requirements)) {
             if (studentMarks[subject] < minMark) {
               qualifies = false;
@@ -56,11 +75,13 @@ document.getElementById('marks-form').addEventListener('submit', function(event)
             }
           }
 
-          if (qualifies) {
+          // Check APS requirements
+          if (qualifies && studentAPS >= course.aps) {
             qualifiedCourses.push({
               university: university.name,
               course: course.name,
-              link: course.apply_link
+              link: course.apply_link,
+              aps: course.aps
             });
           }
         });
@@ -75,25 +96,7 @@ document.getElementById('marks-form').addEventListener('submit', function(event)
     .catch(error => console.error('Error fetching university courses:', error));
 });
 
-function displayResults(courses) {
-  const resultsList = document.getElementById('results-list');
-  resultsList.innerHTML = '';
-
-  if (courses.length === 0) {
-    resultsList.innerHTML = '<li>No courses found matching your qualifications.</li>';
-    return;
-  }
-
-  courses.forEach(course => {
-    const listItem = document.createElement('li');
-    const link = document.createElement('a');
-    link.href = course.link;
-    link.textContent = `${course.university} - ${course.course}`;
-    listItem.appendChild(link);
-    resultsList.appendChild(listItem);
-  });
-}
-
+displayResults(courses);
 
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId')); 
 
