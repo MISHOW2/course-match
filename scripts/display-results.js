@@ -17,19 +17,3 @@ export function displayResults(courses) {
   });
 }
 
-
-export function calcAps(calculateAPS){
-  const calculateAPS = (marks) => {
-    let aps = 0;
-    Object.values(marks).forEach(mark => {
-      if (mark >= 80) aps += 7;
-      else if (mark >= 70) aps += 6;
-      else if (mark >= 60) aps += 5;
-      else if (mark >= 50) aps += 4;
-      else if (mark >= 40) aps += 3;
-      else if (mark >= 30) aps += 2;
-      else aps += 1;
-    });
-    return aps;
-  };
-}
