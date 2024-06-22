@@ -1,7 +1,6 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth, sendPasswordResetEmail, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Your web app's Firebase configuration
@@ -54,6 +53,47 @@ if (googleLogin) {
   });
 }
 
+// Handle the Forgot Password modal
+const forgotPasswordLink = document.getElementById("forgotPasswordLink");
+const forgotPasswordModal = document.getElementById("forgotPasswordModal");
+const closeModal = document.getElementsByClassName("close")[0];
+const resetPasswordForm = document.getElementById("forgotPasswordForm");
+
+if (forgotPasswordLink) {
+  forgotPasswordLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    forgotPasswordModal.style.display = "block";
+  });
+}
+
+if (closeModal) {
+  closeModal.addEventListener("click", () => {
+    forgotPasswordModal.style.display = "none";
+  });
+}
+
+window.onclick = function(event) {
+  if (event.target == forgotPasswordModal) {
+    forgotPasswordModal.style.display = "none";
+  }
+};
+
+if (resetPasswordForm) {
+  resetPasswordForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const resetEmail = document.getElementById("resetEmail").value;
+
+    sendPasswordResetEmail(auth, resetEmail)
+      .then(() => {
+        showMessage("Password reset email sent successfully", "resetPasswordMessage");
+      })
+      .catch((error) => {
+        console.error("Error sending password reset email:", error);
+        showMessage(`Error: ${error.message}`, "resetPasswordMessage");
+      });
+  });
+}
+
 // Event listener for email/password sign-up
 const signUpButton = document.getElementById('submitSignUp');
 if (signUpButton) {
@@ -75,19 +115,11 @@ if (signUpButton) {
         return setDoc(doc(db, "users", user.uid), userData);
       })
       .then(() => {
-        showMessage('Account Created Successfully', 'signUpMessage');
-        setTimeout(() => {
-          window.location.href = 'index.html';
-        }, 4000); // 4-second delay before redirecting to login page
+        showMessage('Registration successful!', 'signUpMessage');
       })
       .catch((error) => {
-        console.error("Error creating user or writing document:", error);
-        const errorMessage = error.message;
-        if (error.code === 'auth/email-already-in-use') {
-          showMessage('Email Address Already Exists !!!', 'signUpMessage');
-        } else {
-          showMessage(`Unable to create user: ${errorMessage}`, 'signUpMessage');
-        }
+        console.error("Error during sign-up:", error);
+        showMessage(`Error: ${error.message}`, 'signUpMessage');
       });
   });
 }
@@ -107,7 +139,7 @@ if (signInButton) {
         showMessage('Login is successful', 'signInMessage');
         setTimeout(() => {
           window.location.href = 'html/dashboard.html';
-        }, 4000); // 4-second delay before redirecting to dashboard
+        },2000 ); // 2-second delay before redirecting to dashboard
       })
       .catch((error) => {
         console.error("Error signing in:", error);
