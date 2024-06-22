@@ -1,4 +1,4 @@
-export function displayResults(courses) {
+/*export function displayResults(courses) {
   const resultsList = document.getElementById('results-list');
   resultsList.innerHTML = '';
 
@@ -15,5 +15,5 @@ export function displayResults(courses) {
     listItem.appendChild(link);
     resultsList.appendChild(listItem);
   });
-}
+}*/
 
