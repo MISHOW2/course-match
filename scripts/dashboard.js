@@ -28,6 +28,8 @@ const db = getFirestore();
 
 onAuthStateChanged(auth, (user) => {
   const loggedInUserId = localStorage.getItem('loggedInUserId');
+  const welcomeMessageElement = document.getElementById('welcomeMessage');
+
   if (loggedInUserId) {
     console.log(user);
     const docRef = doc(db, "users", loggedInUserId);
@@ -35,9 +37,7 @@ onAuthStateChanged(auth, (user) => {
       .then((docSnap) => {
         if (docSnap.exists()) {
           const userData = docSnap.data();
-          document.getElementById('loggedInUserName').innerText = userData.firstName;
-          document.getElementById('loggedUserEmail').innerText = userData.email;
-          document.getElementById('loggedUserLName').innerText = userData.lastName;
+          welcomeMessageElement.innerText = `${userData.firstName} ${userData.lastName}`;
           console.log(userData);
         } else {
           console.log("No document found matching ID");
@@ -49,9 +49,7 @@ onAuthStateChanged(auth, (user) => {
   } else {
     if (user) {
       // User is logged in but not found in local storage
-      document.getElementById('loggedInUserName').innerText = "Welcome to Course Match";
-      document.getElementById('loggedUserEmail').innerText = "";
-      document.getElementById('loggedUserLName').innerText = "";
+      welcomeMessageElement.innerText = "to CourseMatch";
     } else {
       console.log("User ID not found in local storage and no user is logged in");
     }
@@ -81,7 +79,7 @@ export function logout() {
 
 logout();
 
-
+// Optional: Add console logs for debugging
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
 
