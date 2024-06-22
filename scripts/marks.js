@@ -1,5 +1,5 @@
 import { logout } from "./dashboard.js";
-
+import { toggleMenu } from "./toggle-menu.js";
 
 
 document.getElementById('marks-form').addEventListener('submit', function(event) {
@@ -116,16 +116,6 @@ export function displayResults(courses) {
 
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId')); 
 
-export function toggleMenu(){
-  document.getElementById('toggle-menu').addEventListener('click', function() {
-    document.getElementById('sidebar').classList.toggle('open');
-  });
 
-  document.getElementById('close-menu').addEventListener('click', function() {
-    document.getElementById('sidebar').classList.remove('open');
-  });
-}
-
-toggleMenu();
 
 logout();

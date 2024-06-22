@@ -5,7 +5,9 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-
+import { toggleMenu } from "./toggle-menu.js";
+ 
+toggleMenu();
 
 const firebaseConfig = {
   apiKey: "AIzaSyBRFlz8x6m9KBBdlaW1lQxYAVqzOSEWmBE",
@@ -81,10 +83,3 @@ logout();
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
 
-document.getElementById('toggle-menu').addEventListener('click', function() {
-  document.getElementById('sidebar').classList.toggle('open');
-});
-
-document.getElementById('close-menu').addEventListener('click', function() {
-  document.getElementById('sidebar').classList.remove('open');
-});
