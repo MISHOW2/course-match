@@ -1,5 +1,6 @@
 {
   "universities": [
+       
     {
       "name": "University of Cape Town",
       "courses": [
@@ -43,7 +44,311 @@
           "apply_link": "http://uct.ac.za/apply/ba-psychology"
         }
       ]
-    },
+    },{
+      "name": "Vaal University of Technology",
+      "courses": [
+        {
+          "name": "Diploma in Information Technology",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 55,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-it"
+        },
+        {
+          "name": "Diploma in Cost and Management Accounting",
+          "subject_requirements": {
+            "mathematics": 60,
+            "accounting": 55,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-cma"
+        },
+        {
+          "name": "Diploma in Internal Auditing",
+          "subject_requirements": {
+            "mathematics": 60,
+            "accounting": 55,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-ia"
+        },
+        {
+          "name": "Diploma in Marketing",
+          "subject_requirements": {
+            "mathematics": 55,
+            "english": 50,
+            "business-studies": 55
+          },
+          "aps": 20,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-marketing"
+        },
+        {
+          "name": "Diploma in Tourism Management",
+          "subject_requirements": {
+            "geography": 55,
+            "english": 50,
+            "business-studies": 55
+          },
+          "aps": 20,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-tourism"
+        },
+        {
+          "name": "Diploma in Agricultural Management",
+          "subject_requirements": {
+            "agricultural-sciences": 55,
+            "mathematics": 55,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-agricultural-management"
+        },
+        {
+          "name": "Diploma in Retail Business Management",
+          "subject_requirements": {
+            "business-studies": 55,
+            "english": 50,
+            "accounting": 55
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-retail-business"
+        },
+        {
+          "name": "Diploma in Fashion",
+          "subject_requirements": {
+            "visual-arts": 60,
+            "design": 60,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-fashion"
+        },
+        {
+          "name": "Diploma in Photography",
+          "subject_requirements": {
+            "visual-arts": 60,
+            "design": 60,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-photography"
+        },
+        {
+          "name": "Diploma in Graphic Design",
+          "subject_requirements": {
+            "visual-arts": 60,
+            "design": 60,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-graphic-design"
+        },
+        {
+          "name": "Diploma in Fine Art",
+          "subject_requirements": {
+            "visual-arts": 60,
+            "design": 60,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-fine-art"
+        },
+        {
+          "name": "Diploma in Hospitality Management",
+          "subject_requirements": {
+            "business-studies": 55,
+            "english": 50,
+            "accounting": 55
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-hospitality"
+        },
+        {
+          "name": "Diploma in Public Relations",
+          "subject_requirements": {
+            "english": 55,
+            "business-studies": 55
+          },
+          "aps": 20,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-public-relations"
+        },
+        {
+          "name": "Diploma in Ecotourism Management",
+          "subject_requirements": {
+            "geography": 55,
+            "english": 50,
+            "life-sciences": 55
+          },
+          "aps": 20,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-ecotourism"
+        },
+        {
+          "name": "Diploma in Legal Assistance",
+          "subject_requirements": {
+            "history": 60,
+            "english": 50,
+            "business-studies": 55
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-legal-assistance"
+        },
+        {
+          "name": "Diploma in Policing",
+          "subject_requirements": {
+            "history": 60,
+            "english": 50,
+            "business-studies": 55
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-policing"
+        },
+        {
+          "name": "Diploma in Labour Law",
+          "subject_requirements": {
+            "history": 60,
+            "english": 50,
+            "business-studies": 55
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-labour-law"
+        },
+        {
+          "name": "Diploma in Safety Management",
+          "subject_requirements": {
+            "life-sciences": 55,
+            "physical-sciences": 55,
+            "english": 50
+          },
+          "aps": 22,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-safety-management"
+        },
+        {
+          "name": "Bachelor of Education",
+          "subject_requirements": {
+            "english": 60,
+            "life-orientation": 55,
+            "history": 55
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/bachelor-education"
+        },
+        {
+          "name": "Postgraduate Diploma in Higher Education",
+          "subject_requirements": {
+            "english": 65,
+            "history": 60,
+            "life-orientation": 55
+          },
+          "aps": 26,
+          "apply_link": "https://www.vut.ac.za/apply/pgd-higher-education"
+        },
+        {
+          "name": "Diploma in Chemical Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-chemical-engineering"
+        },
+        {
+          "name": "Diploma in Civil Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-civil-engineering"
+        },
+        {
+          "name": "Diploma in Industrial Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-industrial-engineering"
+        },
+        {
+          "name": "Diploma in Mechanical Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-mechanical-engineering"
+        },
+        {
+          "name": "Diploma in Metallurgical Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-metallurgical-engineering"
+        },
+        {
+          "name": "Diploma in Electrical Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-electrical-engineering"
+        },
+        {
+          "name": "Diploma in Electronic Engineering",
+          "subject_requirements": {
+            "mathematics": 60,
+            "physical-sciences": 60,
+            "english": 50
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-electronic-engineering"
+        },
+        {
+          "name": "Diploma in Biomedical Technology",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 55
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-biomedical-tech"
+        },
+        {
+          "name": "Diploma in Biotechnology",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 55
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-biotech"
+        },
+        {
+          "name": "Diploma in Environmental Sciences",
+          "subject_requirements": {
+            "life-sciences": 60,
+            "physical-sciences": 60,
+            "mathematics": 55
+          },
+          "aps": 24,
+          "apply_link": "https://www.vut.ac.za/apply/diploma-env-sciences"
+        }
+      ]
+    }
+    ,
     {
       "name": "University of the Witwatersrand",
       "courses": [
