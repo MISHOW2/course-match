@@ -1,6 +1,7 @@
 import { logout } from "./dashboard.js";
 import { toggleMenu } from "./toggle-menu.js";
 
+
 toggleMenu();
 
 document.getElementById('marks-form').addEventListener('submit', function(event) {
@@ -56,7 +57,7 @@ document.getElementById('marks-form').addEventListener('submit', function(event)
 
   const studentAPS = calculateAPS(studentMarks);
 
-  fetch('../data/university_courses.json')
+  fetch('./data/university_courses.json')
     .then(response => response.json())
     .then(data => {
       const qualifiedCourses = [];

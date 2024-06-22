@@ -45,8 +45,7 @@ if (googleLogin) {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href = "../html-files/dashboard.html";
+        window.location.href = "dashboard.html";
       })
       .catch((error) => {
         console.error(`Error during sign-in: ${error.code} - ${error.message}`);
@@ -73,13 +72,12 @@ if (signUpButton) {
           firstName: firstName,
           lastName: lastName
         };
-        localStorage.setItem('loggedInUserId', user.uid);
         return setDoc(doc(db, "users", user.uid), userData);
       })
       .then(() => {
         showMessage('Account Created Successfully', 'signUpMessage');
         setTimeout(() => {
-          window.location.href = '../html-files/login.html';
+          window.location.href = 'login.html';
         }, 4000); // 4-second delay before redirecting to login page
       })
       .catch((error) => {
@@ -108,7 +106,7 @@ if (signInButton) {
         localStorage.setItem('loggedInUserId', user.uid);
         showMessage('Login is successful', 'signInMessage');
         setTimeout(() => {
-          window.location.href = '../html-files/dashboard.html';
+          window.location.href = 'dashboard.html';
         }, 4000); // 4-second delay before redirecting to dashboard
       })
       .catch((error) => {

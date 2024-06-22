@@ -65,7 +65,7 @@ export function logout() {
         localStorage.removeItem('loggedInUserId');
         signOut(auth)
           .then(() => {
-            window.location.href = '../login.html';
+            window.location.href = 'login.html';
           })
           .catch((error) => {
             console.error('Error Signing out:', error);
@@ -83,3 +83,10 @@ logout();
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
 
+document.getElementById('toggle-menu').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.toggle('open');
+});
+
+document.getElementById('close-menu').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.remove('open');
+});
