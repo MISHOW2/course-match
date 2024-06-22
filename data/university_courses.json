@@ -1,0 +1,859 @@
+{
+  "universities": [
+    {
+      "name": "University of Cape Town",
+      "courses": [
+        {
+          "name": "Bachelor of Commerce",
+          "subject_requirements": {
+            "accounting": 60,
+            "economics": 60,
+            "mathematics": 70
+          },
+          "apply_link": "http://uct.ac.za/apply/bcom"
+        },
+        {
+          "name": "Bachelor of Science in Computer Science",
+          "subject_requirements": {
+            "mathematics": 70,
+            "physical-sciences": 65,
+            "information-technology": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/bsc-cs"
+        },
+        {
+          "name": "Bachelor of Arts in Psychology",
+          "subject_requirements": {
+            "english": 65,
+            "life-sciences": 60,
+            "history": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/ba-psych"
+        },
+        {
+          "name": "Bachelor of Engineering in Civil Engineering",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 70,
+            "engineering-graphics-and-design": 65
+          },
+          "apply_link": "http://uct.ac.za/apply/beng-civil"
+        },
+        {
+          "name": "Bachelor of Science in Life Sciences",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/bsc-life"
+        },
+        {
+          "name": "Bachelor of Education",
+          "subject_requirements": {
+            "english": 65,
+            "life-orientation": 60,
+            "history": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/bed"
+        },
+        {
+          "name": "Bachelor of Fine Arts",
+          "subject_requirements": {
+            "visual-arts": 70,
+            "design": 65,
+            "history": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/bfa"
+        },
+        {
+          "name": "Bachelor of Music",
+          "subject_requirements": {
+            "music": 75,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/bmus"
+        },
+        {
+          "name": "Bachelor of Social Work",
+          "subject_requirements": {
+            "life-orientation": 65,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/bsw"
+        },
+        {
+          "name": "Bachelor of Science in Environmental Science",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://uct.ac.za/apply/bsc-env"
+        }
+      ]
+    },
+    {
+      "name": "University of the Witwatersrand",
+      "courses": [
+        {
+          "name": "Bachelor of Medicine and Bachelor of Surgery",
+          "subject_requirements": {
+            "life-sciences": 75,
+            "physical-sciences": 70,
+            "mathematics": 70
+          },
+          "apply_link": "http://wits.ac.za/apply/mbbs"
+        },
+        {
+          "name": "Bachelor of Law",
+          "subject_requirements": {
+            "english": 70,
+            "history": 65,
+            "business-studies": 60
+          },
+          "apply_link": "http://wits.ac.za/apply/llb"
+        },
+        {
+          "name": "Bachelor of Science in Mechanical Engineering",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 70,
+            "engineering-graphics-and-design": 65
+          },
+          "apply_link": "http://wits.ac.za/apply/bsc-mech"
+        },
+        {
+          "name": "Bachelor of Commerce in Finance",
+          "subject_requirements": {
+            "accounting": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://wits.ac.za/apply/bcom-fin"
+        },
+        {
+          "name": "Bachelor of Science in Biotechnology",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://wits.ac.za/apply/bsc-bio"
+        },
+        {
+          "name": "Bachelor of Arts in Journalism",
+          "subject_requirements": {
+            "english": 70,
+            "history": 65,
+            "business-studies": 60
+          },
+          "apply_link": "http://wits.ac.za/apply/ba-journ"
+        },
+        {
+          "name": "Bachelor of Science in Mathematics",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 65,
+            "computer-applications-technology": 60
+          },
+          "apply_link": "http://wits.ac.za/apply/bsc-math"
+        },
+        {
+          "name": "Bachelor of Arts in Sociology",
+          "subject_requirements": {
+            "english": 65,
+            "history": 60,
+            "life-orientation": 60
+          },
+          "apply_link": "http://wits.ac.za/apply/ba-socio"
+        },
+        {
+          "name": "Bachelor of Science in Chemistry",
+          "subject_requirements": {
+            "physical-sciences": 70,
+            "mathematics": 65,
+            "life-sciences": 60
+          },
+          "apply_link": "http://wits.ac.za/apply/bsc-chem"
+        },
+        {
+          "name": "Bachelor of Education in Foundation Phase Teaching",
+          "subject_requirements": {
+            "english": 65,
+            "life-orientation": 60,
+            "history": 60
+          },
+          "apply_link": "http://wits.ac.za/apply/bed-fpt"
+        }
+      ]
+    },
+    {
+      "name": "Stellenbosch University",
+      "courses": [
+        {
+          "name": "Bachelor of Science in Agriculture",
+          "subject_requirements": {
+            "agricultural-sciences": 70,
+            "life-sciences": 65,
+            "mathematics": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/bsc-agri"
+        },
+        {
+          "name": "Bachelor of Engineering in Electrical Engineering",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 70,
+            "engineering-graphics-and-design": 65
+          },
+          "apply_link": "http://sun.ac.za/apply/beng-elec"
+        },
+        {
+          "name": "Bachelor of Arts in Visual Arts",
+          "subject_requirements": {
+            "visual-arts": 70,
+            "design": 65,
+            "history": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/ba-visual"
+        },
+        {
+          "name": "Bachelor of Science in Chemistry and Polymer Science",
+          "subject_requirements": {
+            "physical-sciences": 70,
+            "mathematics": 65,
+            "life-sciences": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/bsc-chem-poly"
+        },
+        {
+          "name": "Bachelor of Commerce in Accounting",
+          "subject_requirements": {
+            "accounting": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://sun.ac.za/apply/bcom-acc"
+        },
+        {
+          "name": "Bachelor of Science in Computer Science",
+          "subject_requirements": {
+            "mathematics": 70,
+            "physical-sciences": 65,
+            "information-technology": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/bsc-cs"
+        },
+        {
+          "name": "Bachelor of Arts in Drama and Theatre Studies",
+          "subject_requirements": {
+            "dramatic-arts": 70,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/ba-drama"
+        },
+        {
+          "name": "Bachelor of Science in Human Life Sciences",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/bsc-human"
+        },
+        {
+          "name": "Bachelor of Social Work",
+          "subject_requirements": {
+            "life-orientation": 65,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/bsw"
+        },
+        {
+          "name": "Bachelor of Science in Forestry and Wood Sciences",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://sun.ac.za/apply/bsc-forestry"
+        }
+      ]
+    },
+    {
+      "name": "University of Pretoria",
+      "courses": [
+        {
+          "name": "Bachelor of Engineering in Chemical Engineering",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 70,
+            "engineering-graphics-and-design": 65
+          },
+          "apply_link": "http://up.ac.za/apply/beng-chem"
+        },
+        {
+          "name": "Bachelor of Science in Environmental Management",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://up.ac.za/apply/bsc-env-mgmt"
+        },
+        {
+          "name": "Bachelor of Commerce in Marketing Management",
+          "subject_requirements": {
+            "business-studies": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://up.ac.za/apply/bcom-marketing"
+        },
+        {
+          "name": "Bachelor of Science in Geology",
+          "subject_requirements": {
+            "physical-sciences": 70,
+            "mathematics": 65,
+            "geography": 60
+          },
+          "apply_link": "http://up.ac.za/apply/bsc-geology"
+        },
+        {
+          "name": "Bachelor of Arts in Political Science",
+          "subject_requirements": {
+            "history": 70,
+            "english": 65,
+            "life-orientation": 60
+          },
+          "apply_link": "http://up.ac.za/apply/ba-pol-sci"
+        },
+        {
+          "name": "Bachelor of Science in Food Science",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://up.ac.za/apply/bsc-food"
+        },
+        {
+          "name": "Bachelor of Commerce in Human Resource Management",
+          "subject_requirements": {
+            "business-studies": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://up.ac.za/apply/bcom-hrm"
+        },
+        {
+          "name": "Bachelor of Science in Information Technology",
+          "subject_requirements": {
+            "information-technology": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://up.ac.za/apply/bsc-it"
+        },
+        {
+          "name": "Bachelor of Arts in Languages",
+          "subject_requirements": {
+            "afrikaans": 70,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://up.ac.za/apply/ba-lang"
+        },
+        {
+          "name": "Bachelor of Education in Intermediate Phase Teaching",
+          "subject_requirements": {
+            "english": 65,
+            "life-orientation": 60,
+            "history": 60
+          },
+          "apply_link": "http://up.ac.za/apply/bed-intermediate"
+        }
+      ]
+    },
+    {
+      "name": "University of KwaZulu-Natal",
+      "courses": [
+        {
+          "name": "Bachelor of Science in Agriculture",
+          "subject_requirements": {
+            "agricultural-sciences": 70,
+            "life-sciences": 65,
+            "mathematics": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/bsc-agri"
+        },
+        {
+          "name": "Bachelor of Engineering in Mechanical Engineering",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 70,
+            "engineering-graphics-and-design": 65
+          },
+          "apply_link": "http://ukzn.ac.za/apply/beng-mech"
+        },
+        {
+          "name": "Bachelor of Arts in Music",
+          "subject_requirements": {
+            "music": 75,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/ba-music"
+        },
+        {
+          "name": "Bachelor of Science in Environmental Science",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/bsc-env"
+        },
+        {
+          "name": "Bachelor of Commerce in Accounting",
+          "subject_requirements": {
+            "accounting": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://ukzn.ac.za/apply/bcom-acc"
+        },
+        {
+          "name": "Bachelor of Science in Computer Science",
+          "subject_requirements": {
+            "mathematics": 70,
+            "physical-sciences": 65,
+            "information-technology": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/bsc-cs"
+        },
+        {
+          "name": "Bachelor of Arts in Drama",
+          "subject_requirements": {
+            "dramatic-arts": 70,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/ba-drama"
+        },
+        {
+          "name": "Bachelor of Science in Human Life Sciences",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/bsc-human"
+        },
+        {
+          "name": "Bachelor of Social Work",
+          "subject_requirements": {
+            "life-orientation": 65,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/bsw"
+        },
+        {
+          "name": "Bachelor of Science in Forestry",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://ukzn.ac.za/apply/bsc-forestry"
+        }
+      ]
+    },
+    {
+      "name": "University of Johannesburg",
+      "courses": [
+        {
+          "name": "Bachelor of Engineering in Electrical Engineering",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 70,
+            "engineering-graphics-and-design": 65
+          },
+          "apply_link": "http://uj.ac.za/apply/beng-elec"
+        },
+        {
+          "name": "Bachelor of Science in Environmental Science",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://uj.ac.za/apply/bsc-env"
+        },
+        {
+          "name": "Bachelor of Commerce in Marketing",
+          "subject_requirements": {
+            "business-studies": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://uj.ac.za/apply/bcom-marketing"
+        },
+        {
+          "name": "Bachelor of Science in Geology",
+          "subject_requirements": {
+            "physical-sciences": 70,
+            "mathematics": 65,
+            "geography": 60
+          },
+          "apply_link": "http://uj.ac.za/apply/bsc-geology"
+        },
+        {
+          "name": "Bachelor of Arts in Political Science",
+          "subject_requirements": {
+            "history": 70,
+            "english": 65,
+            "life-orientation": 60
+          },
+          "apply_link": "http://uj.ac.za/apply/ba-pol-sci"
+        },
+        {
+          "name": "Bachelor of Science in Food Science",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://uj.ac.za/apply/bsc-food"
+        },
+        {
+          "name": "Bachelor of Commerce in Human Resources",
+          "subject_requirements": {
+            "business-studies": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://uj.ac.za/apply/bcom-hr"
+        },
+        {
+          "name": "Bachelor of Science in Information Technology",
+          "subject_requirements": {
+            "information-technology": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://uj.ac.za/apply/bsc-it"
+        },
+        {
+          "name": "Bachelor of Arts in Languages",
+          "subject_requirements": {
+            "afrikaans": 70,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://uj.ac.za/apply/ba-lang"
+        },
+        {
+          "name": "Bachelor of Education in Intermediate Phase",
+          "subject_requirements": {
+            "english": 65,
+            "life-orientation": 60,
+            "history": 60
+          },
+          "apply_link": "http://uj.ac.za/apply/bed-intermediate"
+        }
+      ]
+    },
+    {
+      "name": "North-West University",
+      "courses": [
+        {
+          "name": "Bachelor of Science in Agriculture",
+          "subject_requirements": {
+            "agricultural-sciences": 70,
+            "life-sciences": 65,
+            "mathematics": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/bsc-agri"
+        },
+        {
+          "name": "Bachelor of Engineering in Mechanical Engineering",
+          "subject_requirements": {
+            "mathematics": 75,
+            "physical-sciences": 70,
+            "engineering-graphics-and-design": 65
+          },
+          "apply_link": "http://nwu.ac.za/apply/beng-mech"
+        },
+        {
+          "name": "Bachelor of Arts in Music",
+          "subject_requirements": {
+            "music": 75,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/ba-music"
+        },
+        {
+          "name": "Bachelor of Science in Environmental Science",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/bsc-env"
+        },
+        {
+          "name": "Bachelor of Commerce in Accounting",
+          "subject_requirements": {
+            "accounting": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://nwu.ac.za/apply/bcom-acc"
+        },
+        {
+          "name": "Bachelor of Science in Computer Science",
+          "subject_requirements": {
+            "mathematics": 70,
+            "physical-sciences": 65,
+            "information-technology": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/bsc-cs"
+        },
+        {
+          "name": "Bachelor of Arts in Drama",
+          "subject_requirements": {
+            "dramatic-arts": 70,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/ba-drama"
+        },
+        {
+          "name": "Bachelor of Science in Human Life Sciences",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/bsc-human"
+        },
+        {
+          "name": "Bachelor of Social Work",
+          "subject_requirements": {
+            "life-orientation": 65,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/bsw"
+        },
+        {
+          "name": "Bachelor of Science in Forestry",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://nwu.ac.za/apply/bsc-forestry"
+        }
+      ]
+    },
+    {
+      "name": "University of South Africa",
+      "courses": [
+        {
+          "name": "Bachelor of Science in Computer Science",
+          "subject_requirements": {
+            "mathematics": 70,
+            "physical-sciences": 65,
+            "information-technology": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/bsc-cs"
+        },
+        {
+          "name": "Bachelor of Commerce in Accounting",
+          "subject_requirements": {
+            "accounting": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://unisa.ac.za/apply/bcom-acc"
+        },
+        {
+          "name": "Bachelor of Education in Foundation Phase Teaching",
+          "subject_requirements": {
+            "english": 65,
+            "life-orientation": 60,
+            "history": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/bed-foundation"
+        },
+        {
+          "name": "Bachelor of Arts in Social Work",
+          "subject_requirements": {
+            "life-orientation": 65,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/ba-social"
+        },
+        {
+          "name": "Bachelor of Science in Environmental Management",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/bsc-env-mgmt"
+        },
+        {
+          "name": "Bachelor of Science in Food Science",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/bsc-food"
+        },
+        {
+          "name": "Bachelor of Commerce in Marketing",
+          "subject_requirements": {
+            "business-studies": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://unisa.ac.za/apply/bcom-marketing"
+        },
+        {
+          "name": "Bachelor of Science in Biotechnology",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/bsc-bio"
+        },
+        {
+          "name": "Bachelor of Arts in Political Science",
+          "subject_requirements": {
+            "history": 70,
+            "english": 65,
+            "life-orientation": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/ba-pol-sci"
+        },
+        {
+          "name": "Bachelor of Science in Chemistry",
+          "subject_requirements": {
+            "physical-sciences": 70,
+            "mathematics": 65,
+            "life-sciences": 60
+          },
+          "apply_link": "http://unisa.ac.za/apply/bsc-chem"
+        }
+      ]
+    },
+    {
+      "name": "Rhodes University",
+      "courses": [
+        {
+          "name": "Bachelor of Arts in Journalism and Media Studies",
+          "subject_requirements": {
+            "english": 70,
+            "history": 65,
+            "life-orientation": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/ba-journalism"
+        },
+        {
+          "name": "Bachelor of Science in Biotechnology",
+          "subject_requirements": {
+            "life-sciences": 70,
+            "mathematics": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/bsc-bio"
+        },
+        {
+          "name": "Bachelor of Commerce in Accounting",
+          "subject_requirements": {
+            "accounting": 70,
+            "economics": 65,
+            "mathematics": 70
+          },
+          "apply_link": "http://ru.ac.za/apply/bcom-acc"
+        },
+        {
+          "name": "Bachelor of Science in Computer Science",
+          "subject_requirements": {
+            "mathematics": 70,
+            "physical-sciences": 65,
+            "information-technology": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/bsc-cs"
+        },
+        {
+          "name": "Bachelor of Arts in Fine Art",
+          "subject_requirements": {
+            "visual-arts": 70,
+            "design": 65,
+            "history": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/ba-fine-art"
+        },
+        {
+          "name": "Bachelor of Social Science",
+          "subject_requirements": {
+            "english": 65,
+            "history": 60,
+            "life-orientation": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/bsoc-sci"
+        },
+        {
+          "name": "Bachelor of Arts in Political and International Studies",
+          "subject_requirements": {
+            "history": 70,
+            "english": 65,
+            "life-orientation": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/ba-pol-int"
+        },
+        {
+          "name": "Bachelor of Science in Geography",
+          "subject_requirements": {
+            "geography": 70,
+            "life-sciences": 65,
+            "physical-sciences": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/bsc-geog"
+        },
+        {
+          "name": "Bachelor of Arts in Music",
+          "subject_requirements": {
+            "music": 75,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/ba-music"
+        },
+        {
+          "name": "Bachelor of Arts in Sociology",
+          "subject_requirements": {
+            "sociology": 70,
+            "english": 65,
+            "history": 60
+          },
+          "apply_link": "http://ru.ac.za/apply/ba-sociology"
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,9 @@ import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/fi
 
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+import { toggleMenu } from "./toogle-menu.js";
 
+toggleMenu();
 
 
 const firebaseConfig = {
@@ -55,7 +57,8 @@ onAuthStateChanged(auth, (user)=>{
 
 const logoutButton=document.getElementById('logout');
 
-logoutButton.addEventListener('click',()=>{
+export function logout(){
+  logoutButton.addEventListener('click',()=>{
   localStorage.removeItem('loggedInUserId');
   signOut(auth)
   .then(()=>{
@@ -65,9 +68,21 @@ logoutButton.addEventListener('click',()=>{
       console.error('Error Signing out:', error);
   })
 })
+}
+
+logout();
+  
 // Optional: Add console logs for debugging
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId')); 
+
+document.getElementById('toggle-menu').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.toggle('open');
+});
+
+document.getElementById('close-menu').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.remove('open');
+});
 
 document.getElementById('toggle-menu').addEventListener('click', function() {
   document.getElementById('sidebar').classList.toggle('open');

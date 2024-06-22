@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style/dashboard.css">
   
   <title>CourseMatch Dashboard</title>
-  <script type="module" src="scripts/dashboard.js"></script>
+ 
 </head>
 <body>
   <div class="header">
@@ -34,10 +34,10 @@
           <li><a href="#">HELP/SUPPORT</a></li>
         </ul>
         <div class="log-out-black">
-          <a href="login.html"><img src="image/icons8-logout-50-black.png" alt="Log Out"></a>
+          <a href="login.html" id="logout"><img src="image/icons8-logout-50-black.png" alt="Log Out"></a>
         </div>
         <div class="log-out">
-          <a href="login.html"><img src="image/icons8-logout-50.png" alt="Log Out"></a>
+          <a href="login.html" id="logout"><img src="image/icons8-logout-50.png" alt="Log Out"></a>
         </div>
       </div>
     </div>
@@ -60,14 +60,6 @@
     </div>
   </div>
 
-  <script>
-    document.getElementById('toggle-menu').addEventListener('click', function() {
-      document.getElementById('sidebar').classList.toggle('open');
-    });
-
-    document.getElementById('close-menu').addEventListener('click', function() {
-      document.getElementById('sidebar').classList.remove('open');
-    });
-  </script>
+  <script type="module" src="scripts/dashboard.js"></script>
 </body>
 </html>
