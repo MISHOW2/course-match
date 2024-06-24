@@ -1,6 +1,6 @@
 body {
   font-family: "Inter", sans-serif;
-  background-color: rgba(218, 237, 163, 0.93);
+
   overflow-x: hidden;
 }
 
@@ -14,6 +14,7 @@ body {
   top: 0;
   left: 0;
   padding: 10px;
+  background-color: #D6E7F6;
   
 }
 
@@ -63,84 +64,99 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header{
-    position: relative;
+  .header {
+    position: relative; /* Keep header's position relative */
+    justify-content: space-between; /* Space between header items */
   }
+
   .menu {
-    display: block;
+    display: block; /* Display the menu icon */
   }
 
   .close-nav {
-    display: block;
+    display: block; /* Display the close icon */
+    position: absolute; /* Position close icon */
+    top: 10px;
+    right: 10px;
+    cursor: pointer; /* Pointer cursor */
   }
 
-  .log-out-black {
-    display: none;
-  }
-
-  .log-out {
-    display: block;
-    margin-bottom: 40px;
+  .close-nav img {
+    width: 30px;
   }
 
   .middle-side {
-    justify-content: left;
-    position: absolute;
+    position: fixed; /* Fixed positioning for sidebar */
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease;
-    background-color: black;
+    left: -100%; /* Start off-screen */
+    width: 250px; /* Adjust width as needed */
+    height: 100vh; /* Full height of viewport */
+    background-color: #000000; /* Dark background color */
+    transition: left 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure above other content */
   }
 
   .middle-side.open {
-    height: 100vh; /* Adjust based on the content */
+    left: 0; /* Slide in when open */
+  }
+
+  .nav-sidebar {
+    padding: 2px; /* Padding inside sidebar */
+    margin-bottom: 200px;
   }
 
   .nav-sidebar ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
     display: grid;
- 
   }
 
-  .nav-sidebar {
-    display: grid;
-
-  }
-
-  .close-nav {
-    margin-left: 33px;
-  }
-
-  .nav-sidebar {
-   
-    height: 100%;
-    background-color: black;
-   
+  .nav-sidebar li {
+    margin-bottom: 10px; /* Spacing between navigation items */
   }
 
   .nav-sidebar li a {
-    color: white;
-    font-size: 20px;
+    display: block; /* Ensure links are block-level */
+    text-decoration: none;
+    color: #fff; /* White color for links */
+    font-size: 18px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+    font-weight: 600;
+  }
+
+  .nav-sidebar li a:hover {
+    color: #5FAC22; /* Change color on hover */
   }
 
   .log-out {
+    display: block; /* Display white-themed log out icon */
     text-align: center;
- 
-    margin-bottom: 90px ;
+    margin-top: 20px; /* Adjust margin as needed */
+    z-index: 1001; /* Ensure above sidebar content */
+    margin-top: 100px;
+  }
+
+  .log-out a {
+    display: inline-block; /* Ensure log out link is block-level */
+    text-decoration: none;
+    color: #fff; /* White color for log out link */
+    transition: color 0.3s ease;
+    vertical-align: middle; /* Align vertically */
   }
 
   .log-out img {
-    height: 40px;
-    margin-bottom: 50px;
+    width: 30px; /* Adjust logout icon size */
+    vertical-align: middle; /* Align vertically */
+    margin-right: 10px; /* Provide spacing between icon and text */
   }
 
-  .header {
-    justify-content: space-between;
+  .log-out a:hover {
+    color: #5FAC22; /* Change color on hover */
   }
 
   .menu img {
-    width: 40px;
+    width: 40px; /* Adjust menu icon size */
   }
 }
+
+

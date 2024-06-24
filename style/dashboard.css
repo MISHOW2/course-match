@@ -1,42 +1,109 @@
 .hero-section {
   margin-top: 180px;
-  padding: 20px;
+  padding: 60px;
 }
 
-.fle-box {
+.flex-box {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .main-message {
-  font-family: "Inknut Antiqua", serif;
   margin-top: 40px;
 }
 
 .main-message h1 {
   font-weight: 300;
-  font-size: 26px;
+  font-size: 36px;
 }
 
 .flex-right-side img {
-  height: 483px;
-  width: 500px;
+  height: auto;
+  width: 100%;
+  max-width: 540px;
+}
+
+.instructions {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
 }
 
 .flex-left-side {
-  height: 483px;
-  width: 500px;
+  height: auto;
+  max-height: 483px;
+}
+
+.hero-section-marks-part {
+  padding: 60px;
+}
+
+.form-group-section select {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  background-size: 26px;
+}
+
+.form-group-selection {
+  margin-top: 100px;
+}
+
+.form-group-section {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    margin-top:100px;
+    margin-top: 100px;
+    padding: 20px;
   }
   .flex-box {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
   .flex-right-side {
     display: none;
+  }
+  .form-group-section select {
+    width: 100%;
+    max-width: 110px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    background-size: 26px;
+  }
+  .instructions p {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    margin-top: 50px;
+    padding: 15px;
+  }
+  .main-message h1 {
+    font-size: 28px;
+  }
+  .form-group-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .form-group-selection {
+    margin-top: 50px;
   }
 }

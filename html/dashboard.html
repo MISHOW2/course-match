@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style/dashboard.css">
   <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/marks.css">
   
   <title>CourseMatch Dashboard</title>
 </head>
@@ -21,7 +22,7 @@
     <div class="menu" id="toggle-menu">
       <img src="../image/icons8-menu-50.png" alt="Menu">
     </div>
-    
+
     <div class="middle-side" id="sidebar">
       <div class="nav-sidebar">
         <div class="close-nav" id="close-menu">
@@ -29,36 +30,350 @@
         </div>
         <ul>
           <li><a href="dashboard.html">HOME</a></li>
-          <li><a href="marks.html">ENTER MARKS</a></li>
           <li><a href="#">HELP/SUPPORT</a></li>
+          <div class="log-out">
+            <a href="../index.html" id="logout"><img src="../image/icons8-logout-50.png" alt="Log Out">Log Out</a>
+          </div>
         </ul>
-        <div class="log-out-black">
-          <a href="../index.html" id="logout"><img src="../image/icons8-logout-50-black.png" alt="Log Out"></a>
-        </div>
-        <div class="log-out">
-          <a href="../index.html" id="logout"><img src="../image/icons8-logout-50.png" alt="Log Out"></a>
-        </div>
+       
       </div>
     </div>
   </div>
 
   <div class="hero-section">
     <div>
-      <h1 style="color:#CE0E98;">Welcome <span id="welcomeMessage"></span></h1>
+      <h1 style="color:#5FAC22;">Welcome <span id="welcomeMessage"></span></h1>
     </div>
     <div class="fle-box">
       <div class="flex-left-side">
         <p>Glad to see you here! Let's find the best courses for you</p>
         <div class="main-message">
-          <h1>CourseMatch helps you determine which courses you are eligible for based on your academic marks. Simply enter your marks and view the courses that match your qualifications.</h1>
+          <h1 style="color: #3B4D5E;">CourseMatch helps you determine which courses you are eligible for based on your academic marks. Simply enter your marks and view the courses that match your qualifications.</h1>
         </div>
       </div>
       <div class="flex-right-side">
-        <img src="../image/Free Vector _ Design thinking concept illustration.jpeg" alt="">
+        <img src="../image/Estudante universitário _ Vetor Premium.jpeg" alt="">
       </div>
     </div>
   </div>
 
+  <div class="hero-section-marks-part">
+    <div class="instructions">
+      <h1>Instructions</h1>
+      <p style="color: #3B4D5E;">Please select the university, faculty, and course you are interested in. Then, enter your marks for the required subjects. Ensure that marks are between 0-100</p>
+    </div>
+    <div class="form-group-selection">
+      <div class="form-group-section">
+        <label for="university">Choose University:</label>
+        <select name="university" id="university">
+          <option value="Cape Peninsula University of Technology">Cape Peninsula University of Technology</option>
+          <option value="Central University of Technology">Central University of Technology</option>
+          <option value="Durban University of Technology">Durban University of Technology</option>
+          <option value="Mangosuthu University of Technology">Mangosuthu University of Technology</option>
+          <option value="Nelson Mandela University">Nelson Mandela University</option>
+          <option value="North-West University">North-West University</option>
+          <option value="Rhodes University">Rhodes University</option>
+          <option value="Sefako Makgatho Health Sciences University">Sefako Makgatho Health Sciences University</option>
+          <option value="Sol Plaatje University">Sol Plaatje University</option>
+          <option value="Stellenbosch University">Stellenbosch University</option>
+          <option value="Tshwane University of Technology">Tshwane University of Technology</option>
+          <option value="University of Cape Town">University of Cape Town</option>
+          <option value="University of Fort Hare">University of Fort Hare</option>
+          <option value="University of Johannesburg">University of Johannesburg</option>
+          <option value="University of KwaZulu-Natal">University of KwaZulu-Natal</option>
+          <option value="University of Limpopo">University of Limpopo</option>
+          <option value="University of Mpumalanga">University of Mpumalanga</option>
+          <option value="University of Pretoria">University of Pretoria</option>
+          <option value="University of South Africa">University of South Africa</option>
+          <option value="University of the Free State">University of the Free State</option>
+          <option value="University of the Western Cape">University of the Western Cape</option>
+          <option value="University of the Witwatersrand">University of the Witwatersrand</option>
+          <option value="University of Venda">University of Venda</option>
+          <option value="University of Zululand">University of Zululand</option>
+          <option value="Vaal University of Technology">Vaal University of Technology</option>
+          <option value="Walter Sisulu University">Walter Sisulu University</option>
+        </select>
+        
+      </div>
+
+      <div class="form-group-section">
+        <label for="faculty">Choose Faculty:</label>
+        <select name="faculty" id="faculty" disabled></select>
+      </div>
+
+      <div class="form-group-section">
+        <label for="course">Choose Course:</label>
+        <select name="course" id="course" disabled></select>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hero-section-marks">
+    <div class="instructions">
+      <h1>Instructions</h1>
+      <p>Please enter your marks for the following subjects. Ensure that marks are between 0-100%</p>
+    </div>
+    <div class="flex-box-marks">
+      <div class="form-container">
+        <form id="marks-form">
+          <div class="form-group">
+            <label for="subject1">Subject:</label>
+            <select id="subject1" name="subject1">
+              <option value="accounting">Accounting</option>
+              <option value="agricultural-sciences">Agricultural Sciences</option>
+              <option value="business-studies">Business Studies</option>
+              <option value="computer-applications-technology">Computer Applications Technology</option>
+              <option value="consumer-studies">Consumer Studies</option>
+              <option value="dance-studies">Dance Studies</option>
+              <option value="design">Design</option>
+              <option value="dramatic-arts">Dramatic Arts</option>
+              <option value="economics">Economics</option>
+              <option value="engineering-graphics-and-design">Engineering Graphics and Design</option>
+              <option value="english">English</option>
+              <option value="geography">Geography</option>
+              <option value="history">History</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="life-orientation">Life Orientation</option>
+              <option value="life-sciences">Life Sciences</option>
+              <option value="mathematical-literacy">Mathematical Literacy</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="music">Music</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="religion-studies">Religion Studies</option>
+              <option value="visual-arts">Visual Arts</option>
+              <option value="afrikaans">Afrikaans</option>
+              <option value="isiXhosa">isiXhosa</option>
+              <option value="isiZulu">isiZulu</option>
+              <option value="sesotho">Sesotho</option>
+              <option value="setswana">Setswana</option>
+              <option value="tshivenda">Tshivenda</option>
+              <option value="xitsonga">Xitsonga</option>
+            </select>
+            <input type="number" id="mark1" name="mark1" placeholder="enter marks">
+          </div>
+          <div class="form-group">
+            <label for="subject2">Subject:</label>
+            <select id="subject2" name="subject2">
+              <option value="accounting">Accounting</option>
+              <option value="agricultural-sciences">Agricultural Sciences</option>
+              <option value="business-studies">Business Studies</option>
+              <option value="computer-applications-technology">Computer Applications Technology</option>
+              <option value="consumer-studies">Consumer Studies</option>
+              <option value="dance-studies">Dance Studies</option>
+              <option value="design">Design</option>
+              <option value="dramatic-arts">Dramatic Arts</option>
+              <option value="economics">Economics</option>
+              <option value="engineering-graphics-and-design">Engineering Graphics and Design</option>
+              <option value="english">English</option>
+              <option value="geography">Geography</option>
+              <option value="history">History</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="life-orientation">Life Orientation</option>
+              <option value="life-sciences">Life Sciences</option>
+              <option value="mathematical-literacy">Mathematical Literacy</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="music">Music</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="religion-studies">Religion Studies</option>
+              <option value="visual-arts">Visual Arts</option>
+              <option value="afrikaans">Afrikaans</option>
+              <option value="isiXhosa">isiXhosa</option>
+              <option value="isiZulu">isiZulu</option>
+              <option value="sesotho">Sesotho</option>
+              <option value="setswana">Setswana</option>
+              <option value="tshivenda">Tshivenda</option>
+              <option value="xitsonga">Xitsonga</option>
+            </select>
+            <input type="number" id="mark2" name="mark2" placeholder="enter marks">
+          </div>
+          <div class="form-group">
+            <label for="subject3">Subject:</label>
+            <select id="subject3" name="subject3">
+              <option value="accounting">Accounting</option>
+              <option value="agricultural-sciences">Agricultural Sciences</option>
+              <option value="business-studies">Business Studies</option>
+              <option value="computer-applications-technology">Computer Applications Technology</option>
+              <option value="consumer-studies">Consumer Studies</option>
+              <option value="dance-studies">Dance Studies</option>
+              <option value="design">Design</option>
+              <option value="dramatic-arts">Dramatic Arts</option>
+              <option value="economics">Economics</option>
+              <option value="engineering-graphics-and-design">Engineering Graphics and Design</option>
+              <option value="english">English</option>
+              <option value="geography">Geography</option>
+              <option value="history">History</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="life-orientation">Life Orientation</option>
+              <option value="life-sciences">Life Sciences</option>
+              <option value="mathematical-literacy">Mathematical Literacy</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="music">Music</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="religion-studies">Religion Studies</option>
+              <option value="visual-arts">Visual Arts</option>
+              <option value="afrikaans">Afrikaans</option>
+              <option value="isiXhosa">isiXhosa</option>
+              <option value="isiZulu">isiZulu</option>
+              <option value="sesotho">Sesotho</option>
+              <option value="setswana">Setswana</option>
+              <option value="tshivenda">Tshivenda</option>
+              <option value="xitsonga">Xitsonga</option>
+            </select>
+            <input type="number" id="mark3" name="mark3" placeholder="enter marks">
+          </div>
+          <div class="form-group">
+            <label for="subject4">Subject:</label>
+            <select id="subject4" name="subject4">
+              <option value="accounting">Accounting</option>
+              <option value="agricultural-sciences">Agricultural Sciences</option>
+              <option value="business-studies">Business Studies</option>
+              <option value="computer-applications-technology">Computer Applications Technology</option>
+              <option value="consumer-studies">Consumer Studies</option>
+              <option value="dance-studies">Dance Studies</option>
+              <option value="design">Design</option>
+              <option value="dramatic-arts">Dramatic Arts</option>
+              <option value="economics">Economics</option>
+              <option value="engineering-graphics-and-design">Engineering Graphics and Design</option>
+              <option value="english">English</option>
+              <option value="geography">Geography</option>
+              <option value="history">History</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="life-orientation">Life Orientation</option>
+              <option value="life-sciences">Life Sciences</option>
+              <option value="mathematical-literacy">Mathematical Literacy</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="music">Music</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="religion-studies">Religion Studies</option>
+              <option value="visual-arts">Visual Arts</option>
+              <option value="afrikaans">Afrikaans</option>
+              <option value="isiXhosa">isiXhosa</option>
+              <option value="isiZulu">isiZulu</option>
+              <option value="sesotho">Sesotho</option>
+              <option value="setswana">Setswana</option>
+              <option value="tshivenda">Tshivenda</option>
+              <option value="xitsonga">Xitsonga</option>
+            </select>
+            <input type="number" id="mark4" name="mark4" placeholder="enter marks">
+          </div>
+          <div class="form-group">
+            <label for="subject5">Subject:</label>
+            <select id="subject5" name="subject5">
+              <option value="accounting">Accounting</option>
+              <option value="agricultural-sciences">Agricultural Sciences</option>
+              <option value="business-studies">Business Studies</option>
+              <option value="computer-applications-technology">Computer Applications Technology</option>
+              <option value="consumer-studies">Consumer Studies</option>
+              <option value="dance-studies">Dance Studies</option>
+              <option value="design">Design</option>
+              <option value="dramatic-arts">Dramatic Arts</option>
+              <option value="economics">Economics</option>
+              <option value="engineering-graphics-and-design">Engineering Graphics and Design</option>
+              <option value="english">English</option>
+              <option value="geography">Geography</option>
+              <option value="history">History</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="life-orientation">Life Orientation</option>
+              <option value="life-sciences">Life Sciences</option>
+              <option value="mathematical-literacy">Mathematical Literacy</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="music">Music</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="religion-studies">Religion Studies</option>
+              <option value="visual-arts">Visual Arts</option>
+              <option value="afrikaans">Afrikaans</option>
+              <option value="isiXhosa">isiXhosa</option>
+              <option value="isiZulu">isiZulu</option>
+              <option value="sesotho">Sesotho</option>
+              <option value="setswana">Setswana</option>
+              <option value="tshivenda">Tshivenda</option>
+              <option value="xitsonga">Xitsonga</option>
+            </select>
+            <input type="number" id="mark5" name="mark5" placeholder="enter marks">
+          </div>
+          <div class="form-group">
+            <label for="subject6">Subject:</label>
+            <select id="subject6" name="subject6">
+              <option value="accounting">Accounting</option>
+              <option value="agricultural-sciences">Agricultural Sciences</option>
+              <option value="business-studies">Business Studies</option>
+              <option value="computer-applications-technology">Computer Applications Technology</option>
+              <option value="consumer-studies">Consumer Studies</option>
+              <option value="dance-studies">Dance Studies</option>
+              <option value="design">Design</option>
+              <option value="dramatic-arts">Dramatic Arts</option>
+              <option value="economics">Economics</option>
+              <option value="engineering-graphics-and-design">Engineering Graphics and Design</option>
+              <option value="english">English</option>
+              <option value="geography">Geography</option>
+              <option value="history">History</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="life-orientation">Life Orientation</option>
+              <option value="life-sciences">Life Sciences</option>
+              <option value="mathematical-literacy">Mathematical Literacy</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="music">Music</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="religion-studies">Religion Studies</option>
+              <option value="visual-arts">Visual Arts</option>
+              <option value="afrikaans">Afrikaans</option>
+              <option value="isiXhosa">isiXhosa</option>
+              <option value="isiZulu">isiZulu</option>
+              <option value="sesotho">Sesotho</option>
+              <option value="setswana">Setswana</option>
+              <option value="tshivenda">Tshivenda</option>
+              <option value="xitsonga">Xitsonga</option>
+            </select>
+            <input type="number" id="mark6" name="mark6" placeholder="enter marks">
+          </div>
+          <div class="form-group">
+            <label for="subject7">Subject:</label>
+            <select id="subject7" name="subject7">
+              <option value="accounting">Accounting</option>
+              <option value="agricultural-sciences">Agricultural Sciences</option>
+              <option value="business-studies">Business Studies</option>
+              <option value="computer-applications-technology">Computer Applications Technology</option>
+              <option value="consumer-studies">Consumer Studies</option>
+              <option value="dance-studies">Dance Studies</option>
+              <option value="design">Design</option>
+              <option value="dramatic-arts">Dramatic Arts</option>
+              <option value="economics">Economics</option>
+              <option value="engineering-graphics-and-design">Engineering Graphics and Design</option>
+              <option value="english">English</option>
+              <option value="geography">Geography</option>
+              <option value="history">History</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="life-orientation">Life Orientation</option>
+              <option value="life-sciences">Life Sciences</option>
+              <option value="mathematical-literacy">Mathematical Literacy</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="music">Music</option>
+              <option value="physical-sciences">Physical Sciences</option>
+              <option value="religion-studies">Religion Studies</option>
+              <option value="visual-arts">Visual Arts</option>
+              <option value="afrikaans">Afrikaans</option>
+              <option value="isiXhosa">isiXhosa</option>
+              <option value="isiZulu">isiZulu</option>
+              <option value="sesotho">Sesotho</option>
+              <option value="setswana">Setswana</option>
+              <option value="tshivenda">Tshivenda</option>
+              <option value="xitsonga">Xitsonga</option>
+            </select>
+            <input type="number" id="mark7" name="mark7" placeholder="enter marks">
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="result-container"></div>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="footer">
+    <p>All rights reserved</p>
+  </div>
   <script type="module" src="../scripts/dashboard.js"></script>
 </body>
 </html>

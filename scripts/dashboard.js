@@ -1,3 +1,4 @@
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
 
@@ -82,3 +83,161 @@ logout();
 // Optional: Add console logs for debugging
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const universitySelect = document.getElementById("university");
+  const facultySelect = document.getElementById("faculty");
+  const courseSelect = document.getElementById("course");
+  const resultContainer = document.getElementById('result-container'); // Ensure this element is referenced correctly
+
+  let data;
+
+  fetch("../data/universities.json")
+    .then(response => response.json())
+    .then(json => {
+      data = json.universities;
+    })
+    .catch(error => console.error("Error loading JSON data:", error));
+
+  universitySelect.addEventListener("change", () => {
+    const selectedUniversity = universitySelect.value;
+
+    facultySelect.innerHTML = '<option value="">Select Faculty</option>';
+    courseSelect.innerHTML = '<option value="">Select Course</option>';
+    facultySelect.disabled = true;
+    courseSelect.disabled = true;
+
+    if (selectedUniversity) {
+      const university = data.find(u => u.name === selectedUniversity);
+
+      if (university) {
+        university.faculties.forEach(faculty => {
+          const option = document.createElement("option");
+          option.value = faculty.name;
+          option.textContent = faculty.name;
+          facultySelect.appendChild(option);
+        });
+
+        facultySelect.disabled = false;
+      }
+    }
+  });
+
+  facultySelect.addEventListener("change", () => {
+    const selectedUniversity = universitySelect.value;
+    const selectedFaculty = facultySelect.value;
+
+    courseSelect.innerHTML = '<option value="">Select Course</option>';
+    courseSelect.disabled = true;
+
+    if (selectedUniversity && selectedFaculty) {
+      const university = data.find(u => u.name === selectedUniversity);
+
+      if (university) {
+        const faculty = university.faculties.find(f => f.name === selectedFaculty);
+
+        if (faculty) {
+          faculty.courses.forEach(course => {
+            const option = document.createElement("option");
+            option.value = course.name;
+            option.textContent = course.name;
+            courseSelect.appendChild(option);
+          });
+
+          courseSelect.disabled = false;
+        }
+      }
+    }
+  });
+
+  document.getElementById('marks-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const subject1 = document.getElementById('subject1').value;
+    const mark1 = parseInt(document.getElementById('mark1').value, 10);
+    const subject2 = document.getElementById('subject2').value;
+    const mark2 = parseInt(document.getElementById('mark2').value, 10);
+    const subject3 = document.getElementById('subject3').value;
+    const mark3 = parseInt(document.getElementById('mark3').value, 10);
+    const subject4 = document.getElementById('subject4').value;
+    const mark4 = parseInt(document.getElementById('mark4').value, 10);
+    const subject5 = document.getElementById('subject5').value;
+    const mark5 = parseInt(document.getElementById('mark5').value, 10);
+    const subject6 = document.getElementById('subject6').value;
+    const mark6 = parseInt(document.getElementById('mark6').value, 10);
+    const subject7 = document.getElementById('subject7').value;
+    const mark7 = parseInt(document.getElementById('mark7').value, 10);
+
+    const studentMarks = {
+      [subject1]: mark1,
+      [subject2]: mark2,
+      [subject3]: mark3,
+      [subject4]: mark4,
+      [subject5]: mark5,
+      [subject6]: mark6,
+      [subject7]: mark7,
+    };
+
+    const calculateAPS = (marks) => {
+      let aps = 0;
+      Object.values(marks).forEach(mark => {
+        if (mark >= 80) aps += 7;
+        else if (mark >= 70) aps += 6;
+        else if (mark >= 60) aps += 5;
+        else if (mark >= 50) aps += 4;
+        else if (mark >= 40) aps += 3;
+        else if (mark >= 30) aps += 2;
+        else aps += 1;
+      });
+      return aps;
+    };
+
+    const studentAPS = calculateAPS(studentMarks);
+    const selectedUniversity = universitySelect.value;
+    const selectedFaculty = facultySelect.value;
+    const selectedCourse = courseSelect.value;
+
+    const university = data.find(u => u.name === selectedUniversity);
+    const faculty = university.faculties.find(f => f.name === selectedFaculty);
+    const course = faculty.courses.find(c => c.name === selectedCourse);
+
+    if (course) {
+      const requirements = course.requirements;
+      let qualifies = true;
+
+      for (const [subject, minMark] of Object.entries(requirements.subject_requirements)) {
+        if (studentMarks[subject] < minMark) {
+          qualifies = false;
+          break;
+        }
+      }
+
+      if (qualifies && studentAPS >= requirements.aps) {
+        displayResult(true, course.name, requirements.apply_link, requirements.aps);
+      } else {
+        displayResult(false, course.name, requirements.apply_link, requirements.aps);
+      }
+    }
+  });
+
+  function displayResult(qualifies, courseName, applyLink, requiredAPS) {
+    const resultContainer = document.getElementById('result-container'); // Ensure this element is referenced correctly
+    resultContainer.innerHTML = ''; // This line might throw an error if resultContainer is not found
+
+    const resultMessage = document.createElement('p');
+    if (qualifies) {
+      resultMessage.textContent = `You qualify for the ${courseName} course. Your APS meets the required APS of ${requiredAPS}.`;
+      const applyButton = document.createElement('button');
+      applyButton.textContent = 'Apply Now';
+      applyButton.onclick = () => window.open(applyLink, '_blank');
+      resultContainer.appendChild(resultMessage);
+      resultContainer.appendChild(applyButton);
+    } else {
+      resultMessage.textContent = `You do not qualify for the ${courseName} course. Your APS does not meet the required APS of ${requiredAPS}.`;
+      resultContainer.appendChild(resultMessage);
+    }
+  }
+});
