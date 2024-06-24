@@ -1,13 +1,9 @@
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
 import { toggleMenu } from "./toggle-menu.js";
- 
+
 toggleMenu();
 
 const firebaseConfig = {
@@ -27,36 +23,35 @@ const analytics = getAnalytics(app);
 const auth = getAuth();
 const db = getFirestore();
 
-onAuthStateChanged(auth, (user) => {
-  const loggedInUserId = localStorage.getItem('loggedInUserId');
-  const welcomeMessageElement = document.getElementById('welcomeMessage');
 
-  if (loggedInUserId) {
-    console.log(user);
-    const docRef = doc(db, "users", loggedInUserId);
-    getDoc(docRef)
-      .then((docSnap) => {
-        if (docSnap.exists()) {
-          const userData = docSnap.data();
-          welcomeMessageElement.innerText = `${userData.firstName} ${userData.lastName}`;
-          console.log(userData);
-        } else {
-          console.log("No document found matching ID");
-        }
-      })
-      .catch((error) => {
-        console.log("Error getting document:", error);
-      });
-  } else {
-    if (user) {
-      // User is logged in but not found in local storage
-      welcomeMessageElement.innerText = "to CourseMatch";
+  onAuthStateChanged(auth, (user) => {
+    const loggedInUserId = localStorage.getItem('loggedInUserId');
+    const welcomeMessageElement = document.getElementById('welcomeMessage');
+  
+    if (loggedInUserId) {
+      const docRef = doc(db, "users", loggedInUserId);
+      getDoc(docRef)
+        .then((docSnap) => {
+          if (docSnap.exists()) {
+            const userData = docSnap.data();
+            welcomeMessageElement.innerText = `Welcome ${userData.firstName}`;
+          } else {
+            console.log("No document found matching ID");
+          }
+        })
+        .catch((error) => {
+          console.log("Error getting document:", error);
+        });
     } else {
-      console.log("User ID not found in local storage and no user is logged in");
+      if (user) {
+        // User is logged in with Google (user object is present)
+        welcomeMessageElement.innerText = "Welcome to CourseMatch";
+      } else {
+        console.log("No user is logged in");
+      }
     }
-  }
-});
-
+  });
+  
 export function logout() {
   document.addEventListener('DOMContentLoaded', (event) => {
     const logoutButton = document.getElementById('logout');
@@ -84,14 +79,11 @@ logout();
 console.log("Script loaded"); // Check if script is loaded
 console.log("localStorage loggedInUserId:", localStorage.getItem('loggedInUserId'));
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const universitySelect = document.getElementById("university");
   const facultySelect = document.getElementById("faculty");
   const courseSelect = document.getElementById("course");
-  const resultContainer = document.getElementById('result-container'); // Ensure this element is referenced correctly
+  const resultContainer = document.getElementById('result-container');
 
   let data;
 
@@ -224,8 +216,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function displayResult(qualifies, courseName, applyLink, requiredAPS) {
-    const resultContainer = document.getElementById('result-container'); // Ensure this element is referenced correctly
-    resultContainer.innerHTML = ''; // This line might throw an error if resultContainer is not found
+    const resultContainer = document.getElementById('result-container');
+    resultContainer.innerHTML = '';
 
     const resultMessage = document.createElement('p');
     if (qualifies) {
