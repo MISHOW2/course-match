@@ -360,25 +360,42 @@
       ]
     },
     {
-      "name": "University of Johannesburg",
+      "name": "Rhodes University",
       "faculties": [
         {
-          "name": "Faculty of Art, Design and Architecture",
+          "name": "Humanities",
           "courses": [
             {
-              "name": "Bachelor of Arts in Design",
+              "name": "Bachelor of Arts",
               "requirements": {
                 "subject_requirements": {
                   "english": 60
                 },
-                "aps": 25,
-                "apply_link": "https://www.uj.ac.za/admission-aid/"
+                "aps": 30,
+                "apply_link": "https://www.ru.ac.za/apply"
               }
             }
           ]
         },
         {
-          "name": "College of Business and Economics",
+          "name": "Science",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.ru.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Commerce",
           "courses": [
             {
               "name": "Bachelor of Commerce",
@@ -387,31 +404,91 @@
                   "mathematics": 60,
                   "english": 60
                 },
-                "aps": 28,
-                "apply_link": "https://www.uj.ac.za/admission-aid/"
+                "aps": 30,
+                "apply_link": "https://www.ru.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Johannesburg",
+      "faculties": [
+        {
+          "name": "Science",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.uj.ac.za/apply"
               }
             }
           ]
         },
         {
-          "name": "Faculty of Engineering and the Built Environment",
+          "name": "Engineering",
           "courses": [
             {
-              "name": "Bachelor of Science in Engineering",
+              "name": "Bachelor of Engineering",
               "requirements": {
                 "subject_requirements": {
                   "mathematics": 70,
                   "physical_sciences": 70,
                   "english": 60
                 },
-                "aps": 38,
-                "apply_link": "https://www.uj.ac.za/admission-aid/"
+                "aps": 35,
+                "apply_link": "https://www.uj.ac.za/apply"
               }
             }
           ]
         },
         {
-          "name": "Faculty of Health Sciences",
+          "name": "Commerce",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.uj.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "North-West University",
+      "faculties": [
+        {
+          "name": "Engineering",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 70,
+                  "physical_sciences": 70,
+                  "english": 60
+                },
+                "aps": 35,
+                "apply_link": "https://www.nwu.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Health Sciences",
           "courses": [
             {
               "name": "Bachelor of Medicine and Bachelor of Surgery",
@@ -423,22 +500,79 @@
                   "life_sciences": 60
                 },
                 "aps": 43,
-                "apply_link": "https://www.uj.ac.za/admission-aid/"
+                "apply_link": "https://www.nwu.ac.za/apply"
               }
             }
           ]
         },
         {
-          "name": "Faculty of Humanities",
+          "name": "Commerce",
           "courses": [
             {
-              "name": "Bachelor of Arts",
+              "name": "Bachelor of Commerce",
               "requirements": {
                 "subject_requirements": {
+                  "mathematics": 60,
                   "english": 60
                 },
                 "aps": 30,
-                "apply_link": "https://www.uj.ac.za/admission-aid/"
+                "apply_link": "https://www.nwu.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nelson Mandela University",
+      "faculties": [
+        {
+          "name": "Business and Economic Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.mandela.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Engineering, the Built Environment and Technology",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 70,
+                  "physical_sciences": 70,
+                  "english": 60
+                },
+                "aps": 35,
+                "apply_link": "https://www.mandela.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Health Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Medicine and Bachelor of Surgery",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 70,
+                  "physical_sciences": 70,
+                  "english": 60,
+                  "life_sciences": 60
+                },
+                "aps": 43,
+                "apply_link": "https://www.mandela.ac.za/apply"
               }
             }
           ]
@@ -449,194 +583,24 @@
       "name": "University of South Africa",
       "faculties": [
         {
-          "name": "College of Accounting Sciences",
-          "courses": [
-            {
-              "name": "Bachelor of Accounting Sciences",
-              "requirements": {
-                "subject_requirements": {
-                  "mathematics": 50,
-                  "english": 60
-                },
-                "aps": 28,
-                "apply_link": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"
-              }
-            }
-          ]
-        },
-        {
-          "name": "College of Agriculture and Environmental Sciences",
-          "courses": [
-            {
-              "name": "Bachelor of Science in Agriculture",
-              "requirements": {
-                "subject_requirements": {
-                  "mathematics": 50,
-                  "physical_sciences": 50,
-                  "english": 50
-                },
-                "aps": 24,
-                "apply_link": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"
-              }
-            }
-          ]
-        },
-        {
-          "name": "College of Education",
-          "courses": [
-            {
-              "name": "Bachelor of Education",
-              "requirements": {
-                "subject_requirements": {
-                  "mathematics": 50,
-                  "english": 50
-                },
-                "aps": 23,
-                "apply_link": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"
-              }
-            }
-          ]
-        },
-        {
-          "name": "College of Human Sciences",
-          "courses": [
-            {
-              "name": "Bachelor of Arts",
-              "requirements": {
-                "subject_requirements": {
-                  "english": 50
-                },
-                "aps": 21,
-                "apply_link": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "North-West University",
-      "faculties": [
-        {
-          "name": "Faculty of Economic and Management Sciences",
-          "courses": [
-            {
-              "name": "Bachelor of Commerce",
-              "requirements": {
-                "subject_requirements": {
-                  "mathematics": 60,
-                  "english": 60
-                },
-                "aps": 24,
-                "apply_link": "https://www.nwu.ac.za/apply"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Faculty of Engineering",
-          "courses": [
-            {
-              "name": "Bachelor of Science in Engineering",
-              "requirements": {
-                "subject_requirements": {
-                  "mathematics": 70,
-                  "physical_sciences": 70,
-                  "english": 60
-                },
-                "aps": 38,
-                "apply_link": "https://www.nwu.ac.za/apply"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Faculty of Health Sciences",
-          "courses": [
-            {
-              "name": "Bachelor of Health Sciences",
-              "requirements": {
-                "subject_requirements": {
-                  "mathematics": 60,
-                  "physical_sciences": 60,
-                  "english": 60
-                },
-                "aps": 28,
-                "apply_link": "https://www.nwu.ac.za/apply"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Faculty of Humanities",
-          "courses": [
-            {
-              "name": "Bachelor of Arts",
-              "requirements": {
-                "subject_requirements": {
-                  "english": 60
-                },
-                "aps": 24,
-                "apply_link": "https://www.nwu.ac.za/apply"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Rhodes University",
-      "faculties": [
-        {
-          "name": "Faculty of Humanities",
-          "courses": [
-            {
-              "name": "Bachelor of Arts",
-              "requirements": {
-                "subject_requirements": {
-                  "english": 60
-                },
-                "aps": 26,
-                "apply_link": "https://www.ru.ac.za/admissiongateway/applyingtorhodes/"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Faculty of Science",
+          "name": "Science, Engineering and Technology",
           "courses": [
             {
               "name": "Bachelor of Science",
               "requirements": {
                 "subject_requirements": {
-                  "mathematics": 70,
-                  "physical_sciences": 70,
+                  "mathematics": 65,
+                  "physical_sciences": 65,
                   "english": 60
                 },
-                "aps": 38,
-                "apply_link": "https://www.ru.ac.za/admissiongateway/applyingtorhodes/"
+                "aps": 32,
+                "apply_link": "https://www.unisa.ac.za/apply"
               }
             }
           ]
         },
         {
-          "name": "Faculty of Commerce",
-          "courses": [
-            {
-              "name": "Bachelor of Commerce",
-              "requirements": {
-                "subject_requirements": {
-                  "mathematics": 60,
-                  "english": 60
-                },
-                "aps": 28,
-                "apply_link": "https://www.ru.ac.za/admissiongateway/applyingtorhodes/"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Faculty of Law",
+          "name": "Law",
           "courses": [
             {
               "name": "Bachelor of Laws",
@@ -645,7 +609,531 @@
                   "english": 70
                 },
                 "aps": 32,
-                "apply_link": "https://www.ru.ac.za/admissiongateway/applyingtorhodes/"
+                "apply_link": "https://www.unisa.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Commerce",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.unisa.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Zululand",
+      "faculties": [
+        {
+          "name": "Science and Agriculture",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "http://www.unizulu.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Commerce, Administration and Law",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "http://www.unizulu.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Walter Sisulu University",
+      "faculties": [
+        {
+          "name": "Science, Engineering and Technology",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.wsu.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Commerce and Administration",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.wsu.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cape Peninsula University of Technology",
+      "faculties": [
+        {
+          "name": "Engineering and the Built Environment",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering Technology",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.cput.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Business and Management Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.cput.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Venda",
+      "faculties": [
+        {
+          "name": "Science, Engineering and Agriculture",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.univen.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Management, Commerce and Law",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.univen.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Fort Hare",
+      "faculties": [
+        {
+          "name": "Science and Agriculture",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.ufh.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Law",
+          "courses": [
+            {
+              "name": "Bachelor of Laws",
+              "requirements": {
+                "subject_requirements": {
+                  "english": 70
+                },
+                "aps": 32,
+                "apply_link": "https://www.ufh.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Commerce",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.ufh.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Central University of Technology",
+      "faculties": [
+        {
+          "name": "Engineering, Built Environment and Information Technology",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering Technology",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.cut.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Management Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.cut.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Limpopo",
+      "faculties": [
+        {
+          "name": "Science and Agriculture",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.ul.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Commerce and Administration",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.ul.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    }, {
+      "name": "Durban University of Technology",
+      "faculties": [
+        {
+          "name": "Engineering and the Built Environment",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering Technology",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 60,
+                  "english": 55
+                },
+                "aps": 30,
+                "apply_link": "https://www.dut.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Accounting and Informatics",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 55
+                },
+                "aps": 28,
+                "apply_link": "https://www.dut.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mangosuthu University of Technology",
+      "faculties": [
+        {
+          "name": "Engineering",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering Technology",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 60,
+                  "english": 55
+                },
+                "aps": 30,
+                "apply_link": "https://www.mut.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Management Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 55
+                },
+                "aps": 28,
+                "apply_link": "https://www.mut.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sol Plaatje University",
+      "faculties": [
+        {
+          "name": "Economic and Management Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "http://www.spu.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Natural and Applied Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "http://www.spu.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tshwane University of Technology",
+      "faculties": [
+        {
+          "name": "Engineering and the Built Environment",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering Technology",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 60,
+                  "english": 55
+                },
+                "aps": 30,
+                "apply_link": "https://www.tut.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Management Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 55
+                },
+                "aps": 28,
+                "apply_link": "https://www.tut.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of Mpumalanga",
+      "faculties": [
+        {
+          "name": "Agriculture and Natural Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.ump.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Commerce and Management",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.ump.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "University of the Free State",
+      "faculties": [
+        {
+          "name": "Natural and Agricultural Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "https://www.ufs.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Economic and Management Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 30,
+                "apply_link": "https://www.ufs.ac.za/apply"
               }
             }
           ]
@@ -656,42 +1144,86 @@
       "name": "University of the Western Cape",
       "faculties": [
         {
-          "name": "Faculty of Arts and Humanities",
+          "name": "Natural Sciences",
           "courses": [
             {
-              "name": "Bachelor of Arts",
+              "name": "Bachelor of Science",
               "requirements": {
                 "subject_requirements": {
-                  "english": 50
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
                 },
-                "aps": 24,
-                "apply_link": "https://www.uwc.ac.za/apply-now"
+                "aps": 32,
+                "apply_link": "https://www.uwc.ac.za/apply"
               }
             }
           ]
         },
         {
-          "name": "Faculty of Community and Health Sciences",
+          "name": "Economic and Management Sciences",
           "courses": [
             {
-              "name": "Bachelor of Science in Physiotherapy",
+              "name": "Bachelor of Commerce",
               "requirements": {
                 "subject_requirements": {
                   "mathematics": 60,
-                  "physical_sciences": 60,
-                  "english": 50
+                  "english": 60
                 },
                 "aps": 30,
-                "apply_link": "https://www.uwc.ac.za/apply-now"
+                "apply_link": "https://www.uwc.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vaal University of Technology",
+      "faculties": [
+        {
+          "name": "Engineering and Technology",
+          "courses": [
+            {
+              "name": "Bachelor of Engineering Technology",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 60,
+                  "english": 55
+                },
+                "aps": 30,
+                "apply_link": "https://www.vut.ac.za/apply"
               }
             }
           ]
         },
         {
-          "name": "Faculty of Dentistry",
+          "name": "Management Sciences",
           "courses": [
             {
-              "name": "Bachelor of Dental Surgery",
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 55
+                },
+                "aps": 28,
+                "apply_link": "https://www.vut.ac.za/apply"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sefako Makgatho Health Sciences University",
+      "faculties": [
+        {
+          "name": "Health Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Medicine and Bachelor of Surgery",
               "requirements": {
                 "subject_requirements": {
                   "mathematics": 70,
@@ -700,15 +1232,100 @@
                   "life_sciences": 60
                 },
                 "aps": 43,
-                "apply_link": "https://www.uwc.ac.za/apply-now"
+                "apply_link": "http://www.smu.ac.za/apply"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Science and Technology",
+          "courses": [
+            {
+              "name": "Bachelor of Science",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 65,
+                  "physical_sciences": 65,
+                  "english": 60
+                },
+                "aps": 32,
+                "apply_link": "http://www.smu.ac.za/apply"
               }
             }
           ]
         }
       ]
-    }]
-  }
-
-
-       
-   
+    },
+    {
+      "name": "University of KwaZulu-Natal",
+      "faculties": [
+        {
+          "name": "Science and Engineering",
+          "courses": [
+            {
+              "name": "Bachelor of Science in Engineering",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 70,
+                  "physical_sciences": 70,
+                  "english": 60
+                },
+                "aps": 38,
+                "apply_link": "http://applications.ukzn.ac.za"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Health Sciences",
+          "courses": [
+            {
+              "name": "Bachelor of Medicine and Bachelor of Surgery",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 70,
+                  "physical_sciences": 70,
+                  "english": 60,
+                  "life_sciences": 60
+                },
+                "aps": 43,
+                "apply_link": "http://applications.ukzn.ac.za"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Law",
+          "courses": [
+            {
+              "name": "Bachelor of Laws",
+              "requirements": {
+                "subject_requirements": {
+                  "english": 70
+                },
+                "aps": 32,
+                "apply_link": "http://applications.ukzn.ac.za"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Management, IT and Governance",
+          "courses": [
+            {
+              "name": "Bachelor of Commerce",
+              "requirements": {
+                "subject_requirements": {
+                  "mathematics": 60,
+                  "english": 60
+                },
+                "aps": 28,
+                "apply_link": "http://applications.ukzn.ac.za"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
