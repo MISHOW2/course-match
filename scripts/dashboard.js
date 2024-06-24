@@ -24,33 +24,33 @@ const auth = getAuth();
 const db = getFirestore();
 
 
-  onAuthStateChanged(auth, (user) => {
-    const loggedInUserId = localStorage.getItem('loggedInUserId');
-    const welcomeMessageElement = document.getElementById('welcomeMessage');
+onAuthStateChanged(auth, (user) => {
+  const loggedInUserId = localStorage.getItem('loggedInUserId');
+  const welcomeMessageElement = document.getElementById('welcomeMessage');
   
-    if (loggedInUserId) {
-      const docRef = doc(db, "users", loggedInUserId);
-      getDoc(docRef)
-        .then((docSnap) => {
-          if (docSnap.exists()) {
-            const userData = docSnap.data();
-            welcomeMessageElement.innerText = `Welcome ${userData.firstName}`;
-          } else {
-            console.log("No document found matching ID");
-          }
-        })
-        .catch((error) => {
-          console.log("Error getting document:", error);
-        });
+  if (loggedInUserId) {
+    const docRef = doc(db, "users", loggedInUserId);
+    getDoc(docRef)
+      .then((docSnap) => {
+        if (docSnap.exists()) {
+          const userData = docSnap.data();
+          welcomeMessageElement.innerText = `Welcome ${userData.firstName}`;
+        } else {
+          console.log("No document found matching ID");
+        }
+      })
+      .catch((error) => {
+        console.log("Error getting document:", error);
+      });
+  } else {
+    if (user) {
+      // User is logged in with Google (user object is present)
+      welcomeMessageElement.innerText = "Welcome to CourseMatch";
     } else {
-      if (user) {
-        // User is logged in with Google (user object is present)
-        welcomeMessageElement.innerText = "Welcome to CourseMatch";
-      } else {
-        console.log("No user is logged in");
-      }
+      console.log("No user is logged in");
     }
-  });
+  }
+});
   
 export function logout() {
   document.addEventListener('DOMContentLoaded', (event) => {

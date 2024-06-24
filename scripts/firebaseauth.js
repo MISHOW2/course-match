@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-import { getAuth, sendPasswordResetEmail, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { getAuth, onAuthStateChanged, sendPasswordResetEmail, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, setDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -116,6 +116,9 @@ if (signUpButton) {
       })
       .then(() => {
         showMessage('Registration successful!', 'signUpMessage');
+        setTimeout(() => {
+          window.location.href = 'index.html';
+        }, 2000);
       })
       .catch((error) => {
         console.error("Error during sign-up:", error);
@@ -139,7 +142,7 @@ if (signInButton) {
         showMessage('Login is successful', 'signInMessage');
         setTimeout(() => {
           window.location.href = 'html/dashboard.html';
-        },2000 ); // 2-second delay before redirecting to dashboard
+        }, 2000); // 2-second delay before redirecting to dashboard
       })
       .catch((error) => {
         console.error("Error signing in:", error);
@@ -174,3 +177,5 @@ if (showLoginButton) {
     document.getElementById("form-instruction").textContent = "Welcome to CourseMatch! Please sign in with:";
   });
 }
+
+
