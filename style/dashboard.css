@@ -6,7 +6,7 @@
 .flex-box {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
+ 
 }
 
 .main-message {
@@ -19,8 +19,8 @@
 }
 
 .flex-right-side img {
-  height: auto;
-  width: 100%;
+  height: 471px;
+
   max-width: 540px;
 }
 
@@ -67,7 +67,8 @@
     padding: 20px;
   }
   .flex-box {
-    flex-direction: column;
+    display: flex;
+    
     align-items: center;
     gap: 20px;
   }
